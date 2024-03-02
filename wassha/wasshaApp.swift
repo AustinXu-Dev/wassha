@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct wasshaApp: App {
+    
+    @StateObject private var locationVM = LocationViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            LocationsView()
+                .environmentObject(locationVM)
         }
     }
 }
