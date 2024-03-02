@@ -19,6 +19,16 @@
 		B7FA7BA42B92ABB100150611 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA7BA32B92ABB100150611 /* ColorExtension.swift */; };
 		BCBF273A2B92EF8B003AAF18 /* LocationManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27392B92EF8B003AAF18 /* LocationManagerViewModel.swift */; };
 		BCBF273C2B92EFA2003AAF18 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF273B2B92EFA2003AAF18 /* LocationViewModel.swift */; };
+		BCBF273F2B92F34A003AAF18 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF273E2B92F34A003AAF18 /* OnboardingView.swift */; };
+		BCBF27412B92F774003AAF18 /* OnboardingOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27402B92F774003AAF18 /* OnboardingOneView.swift */; };
+		BCBF27432B92FB0C003AAF18 /* OnboardingTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27422B92FB0C003AAF18 /* OnboardingTwoView.swift */; };
+		BCBF27452B92FE02003AAF18 /* OnboardingThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27442B92FE02003AAF18 /* OnboardingThreeView.swift */; };
+		BCBF27482B930207003AAF18 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27472B930207003AAF18 /* SignInView.swift */; };
+		BCBF274A2B930243003AAF18 /* AllOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27492B930243003AAF18 /* AllOnboardingView.swift */; };
+		BCBF274C2B930BAC003AAF18 /* OnboardingConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF274B2B930BAC003AAF18 /* OnboardingConstant.swift */; };
+		BCBF274E2B9315B7003AAF18 /* SignInDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF274D2B9315B7003AAF18 /* SignInDetailView.swift */; };
+		BCBF27522B931CD0003AAF18 /* OtpModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27512B931CCF003AAF18 /* OtpModifier.swift */; };
+		BCBF27542B931D12003AAF18 /* OtpFormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27532B931D12003AAF18 /* OtpFormFieldView.swift */; };
 		BCFEEEA22B8B67500060DFB5 /* wasshaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEA12B8B67500060DFB5 /* wasshaApp.swift */; };
 		BCFEEEA42B8B67500060DFB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEA32B8B67500060DFB5 /* ContentView.swift */; };
 		BCFEEEA62B8B67520060DFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFEEEA52B8B67520060DFB5 /* Assets.xcassets */; };
@@ -50,6 +60,16 @@
 		B7FA7BA32B92ABB100150611 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		BCBF27392B92EF8B003AAF18 /* LocationManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerViewModel.swift; sourceTree = "<group>"; };
 		BCBF273B2B92EFA2003AAF18 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		BCBF273E2B92F34A003AAF18 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		BCBF27402B92F774003AAF18 /* OnboardingOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingOneView.swift; sourceTree = "<group>"; };
+		BCBF27422B92FB0C003AAF18 /* OnboardingTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTwoView.swift; sourceTree = "<group>"; };
+		BCBF27442B92FE02003AAF18 /* OnboardingThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThreeView.swift; sourceTree = "<group>"; };
+		BCBF27472B930207003AAF18 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		BCBF27492B930243003AAF18 /* AllOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOnboardingView.swift; sourceTree = "<group>"; };
+		BCBF274B2B930BAC003AAF18 /* OnboardingConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConstant.swift; sourceTree = "<group>"; };
+		BCBF274D2B9315B7003AAF18 /* SignInDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDetailView.swift; sourceTree = "<group>"; };
+		BCBF27512B931CCF003AAF18 /* OtpModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpModifier.swift; sourceTree = "<group>"; };
+		BCBF27532B931D12003AAF18 /* OtpFormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpFormFieldView.swift; sourceTree = "<group>"; };
 		BCFEEE9E2B8B67500060DFB5 /* wassha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wassha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFEEEA12B8B67500060DFB5 /* wasshaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wasshaApp.swift; sourceTree = "<group>"; };
 		BCFEEEA32B8B67500060DFB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +100,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BCBF273D2B92F330003AAF18 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF273E2B92F34A003AAF18 /* OnboardingView.swift */,
+				BCBF27402B92F774003AAF18 /* OnboardingOneView.swift */,
+				BCBF27422B92FB0C003AAF18 /* OnboardingTwoView.swift */,
+				BCBF27442B92FE02003AAF18 /* OnboardingThreeView.swift */,
+				BCBF27492B930243003AAF18 /* AllOnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		BCBF27462B92FF33003AAF18 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF27472B930207003AAF18 /* SignInView.swift */,
+				BCBF274D2B9315B7003AAF18 /* SignInDetailView.swift */,
+				BCBF27512B931CCF003AAF18 /* OtpModifier.swift */,
+				BCBF27532B931D12003AAF18 /* OtpFormFieldView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		BCFEEE952B8B67500060DFB5 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +166,8 @@
 		BCFEEEAF2B8B675E0060DFB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCBF27462B92FF33003AAF18 /* SignIn */,
+				BCBF273D2B92F330003AAF18 /* Onboarding */,
 				BCFEEEB52B8B67960060DFB5 /* Category */,
 				BCFEEEB42B8B678E0060DFB5 /* Search */,
 				BCFEEEB32B8B67890060DFB5 /* Home */,
@@ -148,6 +193,7 @@
 				BCFEEEB62B8B68B80060DFB5 /* modeltest.swift */,
 				B7FA7B8F2B92AA6300150611 /* LaundryShopModel.swift */,
 				BCFEEECD2B8B91430060DFB5 /* Location.swift */,
+				BCBF274B2B930BAC003AAF18 /* OnboardingConstant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,23 +319,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBF274C2B930BAC003AAF18 /* OnboardingConstant.swift in Sources */,
 				B7FA7B9A2B92AB2200150611 /* ClothesCategoryView.swift in Sources */,
+				BCBF27542B931D12003AAF18 /* OtpFormFieldView.swift in Sources */,
 				BCBF273A2B92EF8B003AAF18 /* LocationManagerViewModel.swift in Sources */,
 				BCFEEEC32B8B68EC0060DFB5 /* viewtest.swift in Sources */,
+				BCBF273F2B92F34A003AAF18 /* OnboardingView.swift in Sources */,
 				BCFEEEA42B8B67500060DFB5 /* ContentView.swift in Sources */,
+				BCBF27452B92FE02003AAF18 /* OnboardingThreeView.swift in Sources */,
+				BCBF27482B930207003AAF18 /* SignInView.swift in Sources */,
 				B7FA7B982B92AB0B00150611 /* AllServiceCategoryView.swift in Sources */,
 				BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */,
 				B7FA7B942B92AAB000150611 /* LaundryDetailView.swift in Sources */,
 				BCFEEEC12B8B68E00060DFB5 /* settingtest.swift in Sources */,
+				BCBF27412B92F774003AAF18 /* OnboardingOneView.swift in Sources */,
+				BCBF27432B92FB0C003AAF18 /* OnboardingTwoView.swift in Sources */,
 				BCFEEEBF2B8B68D70060DFB5 /* hometest.swift in Sources */,
 				B7FA7B962B92AAFB00150611 /* ServiceCategoryView.swift in Sources */,
 				BCFEEED12B8B928D0060DFB5 /* LocationsDataService.swift in Sources */,
 				BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */,
 				BCFEEED52B8BA8FA0060DFB5 /* LocationsView.swift in Sources */,
 				BCFEEEC12B8B68E00060DFB5 /* settingtest.swift in Sources */,
+				BCBF274E2B9315B7003AAF18 /* SignInDetailView.swift in Sources */,
 				BCBF273C2B92EFA2003AAF18 /* LocationViewModel.swift in Sources */,
+				BCBF274A2B930243003AAF18 /* AllOnboardingView.swift in Sources */,
 				BCFEEEBF2B8B68D70060DFB5 /* hometest.swift in Sources */,
 				BCFEEECE2B8B91430060DFB5 /* Location.swift in Sources */,
+				BCBF27522B931CD0003AAF18 /* OtpModifier.swift in Sources */,
 				BCFEEEB72B8B68B80060DFB5 /* modeltest.swift in Sources */,
 				B7FA7B9C2B92AB4A00150611 /* AllClothesCategoryView.swift in Sources */,
 				BCFEEEBD2B8B68D30060DFB5 /* searchtest.swift in Sources */,
