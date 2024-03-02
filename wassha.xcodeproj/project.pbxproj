@@ -63,7 +63,6 @@
 		BCFEEEC22B8B68EC0060DFB5 /* viewtest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewtest.swift; sourceTree = "<group>"; };
 		BCFEEECD2B8B91430060DFB5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		BCFEEED02B8B928D0060DFB5 /* LocationsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
-		BCFEEED22B8BA77C0060DFB5 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		BCFEEED42B8BA8FA0060DFB5 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		BCFEEED62B8BB0A80060DFB5 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		BCFEEED82B8BBB8A0060DFB5 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
@@ -136,11 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				BCFEEEB82B8B68C00060DFB5 /* viewmodeltest.swift */,
-<<<<<<< HEAD
 				B7FA7B912B92AA7900150611 /* LocationViewModel.swift */,
-=======
-				BCFEEED22B8BA77C0060DFB5 /* LocationViewModel.swift */,
->>>>>>> 40d09ca (Create map with custom location and pin, Animate and change to another location)
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -149,11 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				BCFEEEB62B8B68B80060DFB5 /* modeltest.swift */,
-<<<<<<< HEAD
 				B7FA7B8F2B92AA6300150611 /* LaundryShopModel.swift */,
-=======
 				BCFEEECD2B8B91430060DFB5 /* Location.swift */,
->>>>>>> 40d09ca (Create map with custom location and pin, Animate and change to another location)
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,7 +274,6 @@
 				B7FA7B9A2B92AB2200150611 /* ClothesCategoryView.swift in Sources */,
 				BCFEEEC32B8B68EC0060DFB5 /* viewtest.swift in Sources */,
 				BCFEEEA42B8B67500060DFB5 /* ContentView.swift in Sources */,
-<<<<<<< HEAD
 				B7FA7B982B92AB0B00150611 /* AllServiceCategoryView.swift in Sources */,
 				BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */,
 				B7FA7B942B92AAB000150611 /* LaundryDetailView.swift in Sources */,
@@ -290,33 +281,24 @@
 				BCFEEEBF2B8B68D70060DFB5 /* hometest.swift in Sources */,
 				B7FA7B962B92AAFB00150611 /* ServiceCategoryView.swift in Sources */,
 				B7FA7B922B92AA7900150611 /* LocationViewModel.swift in Sources */,
-=======
 				BCFEEED12B8B928D0060DFB5 /* LocationsDataService.swift in Sources */,
 				BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */,
 				BCFEEED52B8BA8FA0060DFB5 /* LocationsView.swift in Sources */,
 				BCFEEEC12B8B68E00060DFB5 /* settingtest.swift in Sources */,
 				BCFEEEBF2B8B68D70060DFB5 /* hometest.swift in Sources */,
 				BCFEEECE2B8B91430060DFB5 /* Location.swift in Sources */,
->>>>>>> 40d09ca (Create map with custom location and pin, Animate and change to another location)
 				BCFEEEB72B8B68B80060DFB5 /* modeltest.swift in Sources */,
 				B7FA7B9C2B92AB4A00150611 /* AllClothesCategoryView.swift in Sources */,
 				BCFEEEBD2B8B68D30060DFB5 /* searchtest.swift in Sources */,
-<<<<<<< HEAD
 				B7FA7BA02B92AB8C00150611 /* ServiceScrollView.swift in Sources */,
-=======
 				BCFEEED92B8BBB8A0060DFB5 /* LocationPreviewView.swift in Sources */,
->>>>>>> 40d09ca (Create map with custom location and pin, Animate and change to another location)
 				BCFEEEB92B8B68C00060DFB5 /* viewmodeltest.swift in Sources */,
-				BCFEEED32B8BA77C0060DFB5 /* LocationViewModel.swift in Sources */,
 				BCFEEEA22B8B67500060DFB5 /* wasshaApp.swift in Sources */,
-<<<<<<< HEAD
 				B7FA7B9E2B92AB7600150611 /* LaundryScrollView.swift in Sources */,
 				B7FA7B902B92AA6300150611 /* LaundryShopModel.swift in Sources */,
 				B7FA7BA22B92AB9F00150611 /* HomeView.swift in Sources */,
 				B7FA7BA42B92ABB100150611 /* ColorExtension.swift in Sources */,
-=======
 				BCFEEED72B8BB0A80060DFB5 /* LocationsListView.swift in Sources */,
->>>>>>> 40d09ca (Create map with custom location and pin, Animate and change to another location)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
