@@ -11,11 +11,20 @@ import SwiftUI
 struct wasshaApp: App {
     
     @StateObject private var locationVM = LocationViewModel()
+    @AppStorage(Constants.currentOnboardingVersion) private var hasSeenOnboardingView = false
+
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            LocationsView()
-                .environmentObject(locationVM)
+//            LocationsView()
+//                .environmentObject(locationVM)
+            
+            if hasSeenOnboardingView{
+                HomeView()
+            }
+            else{
+                SignInView()
+            }
         }
     }
 }
