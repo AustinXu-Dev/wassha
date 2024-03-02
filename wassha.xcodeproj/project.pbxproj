@@ -29,6 +29,7 @@
 		BCBF274E2B9315B7003AAF18 /* SignInDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF274D2B9315B7003AAF18 /* SignInDetailView.swift */; };
 		BCBF27522B931CD0003AAF18 /* OtpModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27512B931CCF003AAF18 /* OtpModifier.swift */; };
 		BCBF27542B931D12003AAF18 /* OtpFormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27532B931D12003AAF18 /* OtpFormFieldView.swift */; };
+		BCBF27562B93568D003AAF18 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27552B93568D003AAF18 /* SplashView.swift */; };
 		BCFEEEA22B8B67500060DFB5 /* wasshaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEA12B8B67500060DFB5 /* wasshaApp.swift */; };
 		BCFEEEA42B8B67500060DFB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEA32B8B67500060DFB5 /* ContentView.swift */; };
 		BCFEEEA62B8B67520060DFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFEEEA52B8B67520060DFB5 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		BCBF274D2B9315B7003AAF18 /* SignInDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDetailView.swift; sourceTree = "<group>"; };
 		BCBF27512B931CCF003AAF18 /* OtpModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpModifier.swift; sourceTree = "<group>"; };
 		BCBF27532B931D12003AAF18 /* OtpFormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpFormFieldView.swift; sourceTree = "<group>"; };
+		BCBF27552B93568D003AAF18 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		BCFEEE9E2B8B67500060DFB5 /* wassha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wassha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFEEEA12B8B67500060DFB5 /* wasshaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wasshaApp.swift; sourceTree = "<group>"; };
 		BCFEEEA32B8B67500060DFB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				BCBF27422B92FB0C003AAF18 /* OnboardingTwoView.swift */,
 				BCBF27442B92FE02003AAF18 /* OnboardingThreeView.swift */,
 				BCBF27492B930243003AAF18 /* AllOnboardingView.swift */,
+				BCBF27552B93568D003AAF18 /* SplashView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				BCBF27432B92FB0C003AAF18 /* OnboardingTwoView.swift in Sources */,
 				BCFEEEBF2B8B68D70060DFB5 /* hometest.swift in Sources */,
 				B7FA7B962B92AAFB00150611 /* ServiceCategoryView.swift in Sources */,
+				BCBF27562B93568D003AAF18 /* SplashView.swift in Sources */,
 				BCFEEED12B8B928D0060DFB5 /* LocationsDataService.swift in Sources */,
 				BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */,
 				BCFEEED52B8BA8FA0060DFB5 /* LocationsView.swift in Sources */,
