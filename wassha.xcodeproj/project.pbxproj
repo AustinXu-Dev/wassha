@@ -29,6 +29,12 @@
 		BCBF274E2B9315B7003AAF18 /* SignInDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF274D2B9315B7003AAF18 /* SignInDetailView.swift */; };
 		BCBF27522B931CD0003AAF18 /* OtpModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27512B931CCF003AAF18 /* OtpModifier.swift */; };
 		BCBF27542B931D12003AAF18 /* OtpFormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27532B931D12003AAF18 /* OtpFormFieldView.swift */; };
+		BCBF27562B93568D003AAF18 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27552B93568D003AAF18 /* SplashView.swift */; };
+		BCBF27582B935B29003AAF18 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27572B935B29003AAF18 /* FilterView.swift */; };
+		BCBF275C2B936D47003AAF18 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF275B2B936D47003AAF18 /* SearchView.swift */; };
+		BCBF275E2B939E8C003AAF18 /* SearchbarLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF275D2B939E8B003AAF18 /* SearchbarLocationModel.swift */; };
+		BCBF27602B93AFA5003AAF18 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF275F2B93AFA5003AAF18 /* SearchBar.swift */; };
+		BCBF27622B93BA72003AAF18 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF27612B93BA72003AAF18 /* SideMenu.swift */; };
 		BCFEEEA22B8B67500060DFB5 /* wasshaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEA12B8B67500060DFB5 /* wasshaApp.swift */; };
 		BCFEEEA42B8B67500060DFB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEA32B8B67500060DFB5 /* ContentView.swift */; };
 		BCFEEEA62B8B67520060DFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFEEEA52B8B67520060DFB5 /* Assets.xcassets */; };
@@ -37,7 +43,6 @@
 		BCFEEEB92B8B68C00060DFB5 /* viewmodeltest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEB82B8B68C00060DFB5 /* viewmodeltest.swift */; };
 		BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEBA2B8B68C70060DFB5 /* categorytest.swift */; };
 		BCFEEEBD2B8B68D30060DFB5 /* searchtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEBC2B8B68D30060DFB5 /* searchtest.swift */; };
-		BCFEEEBF2B8B68D70060DFB5 /* hometest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEBE2B8B68D70060DFB5 /* hometest.swift */; };
 		BCFEEEC12B8B68E00060DFB5 /* settingtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEC02B8B68E00060DFB5 /* settingtest.swift */; };
 		BCFEEEC32B8B68EC0060DFB5 /* viewtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEC22B8B68EC0060DFB5 /* viewtest.swift */; };
 		BCFEEECE2B8B91430060DFB5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEECD2B8B91430060DFB5 /* Location.swift */; };
@@ -70,6 +75,12 @@
 		BCBF274D2B9315B7003AAF18 /* SignInDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDetailView.swift; sourceTree = "<group>"; };
 		BCBF27512B931CCF003AAF18 /* OtpModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpModifier.swift; sourceTree = "<group>"; };
 		BCBF27532B931D12003AAF18 /* OtpFormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpFormFieldView.swift; sourceTree = "<group>"; };
+		BCBF27552B93568D003AAF18 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BCBF27572B935B29003AAF18 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		BCBF275B2B936D47003AAF18 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		BCBF275D2B939E8B003AAF18 /* SearchbarLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchbarLocationModel.swift; sourceTree = "<group>"; };
+		BCBF275F2B93AFA5003AAF18 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		BCBF27612B93BA72003AAF18 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		BCFEEE9E2B8B67500060DFB5 /* wassha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wassha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFEEEA12B8B67500060DFB5 /* wasshaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wasshaApp.swift; sourceTree = "<group>"; };
 		BCFEEEA32B8B67500060DFB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,7 +90,6 @@
 		BCFEEEB82B8B68C00060DFB5 /* viewmodeltest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewmodeltest.swift; sourceTree = "<group>"; };
 		BCFEEEBA2B8B68C70060DFB5 /* categorytest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categorytest.swift; sourceTree = "<group>"; };
 		BCFEEEBC2B8B68D30060DFB5 /* searchtest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchtest.swift; sourceTree = "<group>"; };
-		BCFEEEBE2B8B68D70060DFB5 /* hometest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hometest.swift; sourceTree = "<group>"; };
 		BCFEEEC02B8B68E00060DFB5 /* settingtest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingtest.swift; sourceTree = "<group>"; };
 		BCFEEEC22B8B68EC0060DFB5 /* viewtest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewtest.swift; sourceTree = "<group>"; };
 		BCFEEECD2B8B91430060DFB5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -108,6 +118,7 @@
 				BCBF27422B92FB0C003AAF18 /* OnboardingTwoView.swift */,
 				BCBF27442B92FE02003AAF18 /* OnboardingThreeView.swift */,
 				BCBF27492B930243003AAF18 /* AllOnboardingView.swift */,
+				BCBF27552B93568D003AAF18 /* SplashView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -194,6 +205,7 @@
 				B7FA7B8F2B92AA6300150611 /* LaundryShopModel.swift */,
 				BCFEEECD2B8B91430060DFB5 /* Location.swift */,
 				BCBF274B2B930BAC003AAF18 /* OnboardingConstant.swift */,
+				BCBF275D2B939E8B003AAF18 /* SearchbarLocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,7 +221,6 @@
 		BCFEEEB32B8B67890060DFB5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				BCFEEEBE2B8B68D70060DFB5 /* hometest.swift */,
 				B7FA7B9D2B92AB7600150611 /* LaundryScrollView.swift */,
 				B7FA7B9F2B92AB8C00150611 /* ServiceScrollView.swift */,
 				B7FA7BA12B92AB9F00150611 /* HomeView.swift */,
@@ -224,6 +235,10 @@
 				BCFEEED42B8BA8FA0060DFB5 /* LocationsView.swift */,
 				BCFEEED62B8BB0A80060DFB5 /* LocationsListView.swift */,
 				BCFEEED82B8BBB8A0060DFB5 /* LocationPreviewView.swift */,
+				BCBF27572B935B29003AAF18 /* FilterView.swift */,
+				BCBF275B2B936D47003AAF18 /* SearchView.swift */,
+				BCBF275F2B93AFA5003AAF18 /* SearchBar.swift */,
+				BCBF27612B93BA72003AAF18 /* SideMenu.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -329,13 +344,15 @@
 				BCBF27452B92FE02003AAF18 /* OnboardingThreeView.swift in Sources */,
 				BCBF27482B930207003AAF18 /* SignInView.swift in Sources */,
 				B7FA7B982B92AB0B00150611 /* AllServiceCategoryView.swift in Sources */,
+				BCBF27622B93BA72003AAF18 /* SideMenu.swift in Sources */,
 				BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */,
 				B7FA7B942B92AAB000150611 /* LaundryDetailView.swift in Sources */,
 				BCFEEEC12B8B68E00060DFB5 /* settingtest.swift in Sources */,
+				BCBF275C2B936D47003AAF18 /* SearchView.swift in Sources */,
 				BCBF27412B92F774003AAF18 /* OnboardingOneView.swift in Sources */,
 				BCBF27432B92FB0C003AAF18 /* OnboardingTwoView.swift in Sources */,
-				BCFEEEBF2B8B68D70060DFB5 /* hometest.swift in Sources */,
 				B7FA7B962B92AAFB00150611 /* ServiceCategoryView.swift in Sources */,
+				BCBF27562B93568D003AAF18 /* SplashView.swift in Sources */,
 				BCFEEED12B8B928D0060DFB5 /* LocationsDataService.swift in Sources */,
 				BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */,
 				BCFEEED52B8BA8FA0060DFB5 /* LocationsView.swift in Sources */,
@@ -343,7 +360,8 @@
 				BCBF274E2B9315B7003AAF18 /* SignInDetailView.swift in Sources */,
 				BCBF273C2B92EFA2003AAF18 /* LocationViewModel.swift in Sources */,
 				BCBF274A2B930243003AAF18 /* AllOnboardingView.swift in Sources */,
-				BCFEEEBF2B8B68D70060DFB5 /* hometest.swift in Sources */,
+				BCBF27582B935B29003AAF18 /* FilterView.swift in Sources */,
+				BCBF275E2B939E8C003AAF18 /* SearchbarLocationModel.swift in Sources */,
 				BCFEEECE2B8B91430060DFB5 /* Location.swift in Sources */,
 				BCBF27522B931CD0003AAF18 /* OtpModifier.swift in Sources */,
 				BCFEEEB72B8B68B80060DFB5 /* modeltest.swift in Sources */,
@@ -355,6 +373,7 @@
 				BCFEEEA22B8B67500060DFB5 /* wasshaApp.swift in Sources */,
 				B7FA7B9E2B92AB7600150611 /* LaundryScrollView.swift in Sources */,
 				B7FA7B902B92AA6300150611 /* LaundryShopModel.swift in Sources */,
+				BCBF27602B93AFA5003AAF18 /* SearchBar.swift in Sources */,
 				B7FA7BA22B92AB9F00150611 /* HomeView.swift in Sources */,
 				B7FA7BA42B92ABB100150611 /* ColorExtension.swift in Sources */,
 				BCFEEED72B8BB0A80060DFB5 /* LocationsListView.swift in Sources */,
