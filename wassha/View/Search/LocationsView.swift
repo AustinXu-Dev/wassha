@@ -9,43 +9,45 @@ import SwiftUI
 import MapKit
 
 struct LocationsView: View {
+    @Environment(\.dismiss) var dismiss
     @EnvironmentObject private var vm: LocationViewModel
     
     var body: some View {
         ZStack{
             mapLayer
             .ignoresSafeArea()
-            
             VStack(spacing: 0){
                 header
                     .padding()
                 Spacer()
                 locationsPreviewStack
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 
 extension LocationsView{
     private var header: some View{
         VStack{
-            Button(action: {vm.showLocationList.toggle()}, label: {
-                Text(vm.mapLocation.name)
-                    .font(.title2)
-                    .fontWeight(.black)
-                    .foregroundStyle(.primary) // can change primary
-                    .frame(height: 65)
-                    .frame(maxWidth: .infinity)
-                    .animation(.none, value: vm.mapLocation)
-                    .overlay(alignment: .leading) {
-                        Image(systemName: "arrow.down")
-                            .font(.headline)
-                            .foregroundStyle(.primary) // can change primary
-                            .padding()
-                            .rotationEffect(Angle(degrees: vm.showLocationList ? 180 : 0))
-                    }
-            })
-            
+            HStack{
+                Button(action: {
+                    dismiss()
+                }, label: {
+                    Image(systemName: "chevron.left")
+                        .font(.headline)
+                        .padding(.leading, 25)
+                })
+                Button(action: {vm.showLocationList.toggle()}, label: {
+                    Text(vm.mapLocation.name)
+                        .font(.title2)
+                        .fontWeight(.black)
+                        .foregroundStyle(.primary) // can change primary
+                        .frame(height: 65)
+                        .frame(maxWidth: .infinity)
+                        .animation(.none, value: vm.mapLocation)
+                        .offset(x: -10)
+                })
+            }
             if vm.showLocationList{
                 LocationsListView()
             }
@@ -70,7 +72,7 @@ extension LocationsView{
                                     .foregroundStyle(.white)
                             }
                     }
-                    .scaleEffect(vm.mapLocation == location ? 1.2 : 0.7)
+                    .scaleEffect(vm.mapLocation == location ? 1.5 : 0.7)
                     
                 }
             }

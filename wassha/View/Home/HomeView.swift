@@ -10,85 +10,109 @@ struct HomeView: View {
     ]
     @State var searchKeyword:String = ""
     @State var locationVM = LocationManagerViewModel()
-    
+    @State var isSearchng = false
     
     var body: some View {
         NavigationStack{
             ZStack{
-                VStack(alignment:.leading,spacing:10){
-                    
+                Color.wasshaBackgroundColor
+                    .ignoresSafeArea()
+                
+                VStack(alignment: .center,spacing:10){
                     
                     HStack(spacing:0){
                         Text("Hi Kittama...")
                             .font(.system(size:20))
-                        
-                        
                         Spacer()
-                        
                         Button{
                             
                         } label: {
                             Image(systemName:"bell.circle")
                                 .foregroundStyle(.black)
                                 .font(.system(size:25))
-                            
                         }
                     }
-                    
-                    
                     
                     //location here
-                    
-                    
-                    Button {
-                        locationVM.requestLocation()
-                    } label: {
-                        HStack(spacing:5){
-                            Image(systemName:"location.north.circle.fill")
-                                .foregroundStyle(.black)
-                                .font(.system(size:25))
-                                
-                            Text(locationVM.userAddress ?? "Location Unavailable")
-                                .foregroundStyle(.black)
-            
+                    HStack {
+                        Button {
+                            locationVM.requestLocation()
+                        } label: {
+                            HStack(spacing:5){
+                                Image(systemName:"location.north.circle.fill")
+                                    .foregroundStyle(.black)
+                                    .font(.system(size:25))
+                                    
+                                Text(locationVM.userAddress ?? "Location Unavailable")
+                                    .foregroundStyle(.black)
+                
+                            }
                         }
+                        Spacer()
                     }
                     
+                    //Search bar
                     
+                    searchBar
                     
-                    
-                    
-                    Text("Suggestions")
-                        .fontWeight(.bold)
-                        .font(.system(size:25))
+                    HStack {
+                        Text("Suggestions")
+                            .fontWeight(.bold)
+                            .font(.system(size:25))
+                        Spacer()
+                    }
                 
                     LaundryScrollView(laundries: $laundries)
-                    Text("Quick Service")
-                        .fontWeight(.bold)
-                        .font(.system(size:25))
+                    HStack {
+                        Text("Quick Service")
+                            .fontWeight(.bold)
+                            .font(.system(size:25))
+                        Spacer()
+                    }
 
-                        ServicesScrollView()
-                    
-                    
-                    
-                    
+                    ServicesScrollView()
+                    Spacer()
                 }
-                Spacer()
-                .padding()
+                .padding(.horizontal)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                
+                // MARK: Use navigation destination whenever you want to go another view, Navigationlink destination will give error
+                .navigationDestination(for: ViewType.self) { value in
+                    switch value{
+                    case .searchView:
+                        SearchView()
+                    case .currentLocation:
+                        Text("current")
+                    case .locateOnMap:
+                        LocationsView()
+                            .environmentObject(LocationViewModel())
+                    }
+                }
             }
-            .padding()
-           
-            .background(Color.wasshaBackgroundColor)
+            
+            .navigationTitle("WASSHA")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        
-        .searchable(text: $searchKeyword)
-       
-     
-        .ignoresSafeArea(.all)
-        .navigationBarBackButtonHidden()
-        .navigationBarHidden(true)
     }
 }
+
+extension HomeView{
+    private var searchBar: some View{
+        NavigationLink(value: ViewType.searchView) {
+            RoundedRectangle(cornerRadius: 6)
+                .frame(width: 350, height: 50)
+                .foregroundStyle(Color(.systemGray5))
+                .overlay {
+                    HStack{
+                        Text("Search Laundry")
+                            .foregroundStyle(.placeholder)
+                        Spacer()
+                    }.padding(.horizontal)
+                }
+        }
+    }
+}
+
 #Preview {
     HomeView()
 }
