@@ -82,7 +82,8 @@ struct HomeView: View {
                     case .searchView:
                         SearchView()
                     case .currentLocation:
-                        Text("current")
+                        LocationsView()
+                            .environmentObject(LocationViewModel())
                     case .locateOnMap:
                         LocationsView()
                             .environmentObject(LocationViewModel())

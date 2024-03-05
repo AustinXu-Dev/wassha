@@ -11,6 +11,7 @@ import MapKit
 struct LocationsView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject private var vm: LocationViewModel
+    @State private var currentPosition: MapCameraPosition = .userLocation(fallback: .automatic)
     
     var body: some View {
         ZStack{
@@ -47,6 +48,16 @@ extension LocationsView{
                         .animation(.none, value: vm.mapLocation)
                         .offset(x: -10)
                 })
+                
+                Button(action: {
+                    vm.mapRegion = currentPosition
+                    CLLocationManager().requestWhenInUseAuthorization()
+                }, label: {
+                    Image(systemName: "location.circle.fill")
+                        .font(.headline)
+                        .padding(.trailing, 25)
+                })
+                
             }
             if vm.showLocationList{
                 LocationsListView()
@@ -56,13 +67,26 @@ extension LocationsView{
         .background(.thickMaterial)
         .cornerRadius(10)
         .shadow(color: .black.opacity(0.3), radius: 20, x: 0, y: 15)
+        
     }
     
     private var mapLayer: some View{
         Map(position: $vm.mapRegion){
+            UserAnnotation {
+                ZStack{
+                    Circle()
+                        .frame(width: 32, height: 32)
+                        .foregroundStyle(.blue.opacity(0.25))
+                    Circle()
+                        .frame(width: 20, height: 20)
+                        .foregroundStyle(.white)
+                    Circle()
+                        .frame(width: 12, height: 12)
+                        .foregroundStyle(.blue)
+                }
+            }
             ForEach(vm.locations) {location in
                 Annotation(location.name, coordinate: location.coordinates) {
-                    
                     ZStack {
                         Circle()
                             .frame(width: 30, height: 30)

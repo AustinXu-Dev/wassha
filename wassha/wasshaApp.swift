@@ -25,7 +25,8 @@ struct wasshaApp: App {
 //                OnboardingView()
 //            }
             
-            SplashView()
+//            SplashView()
+            HomeView()
         }
     }
 }
