@@ -135,6 +135,8 @@
 				397D4D762B8E58400096DE21 /* OrderDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		}
 		BCBF273D2B92F330003AAF18 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
