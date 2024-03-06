@@ -41,11 +41,8 @@
 		BCFEEEA92B8B67520060DFB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFEEEA82B8B67520060DFB5 /* Preview Assets.xcassets */; };
 		BCFEEEB72B8B68B80060DFB5 /* modeltest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEB62B8B68B80060DFB5 /* modeltest.swift */; };
 		BCFEEEB92B8B68C00060DFB5 /* viewmodeltest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEB82B8B68C00060DFB5 /* viewmodeltest.swift */; };
-		BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEBA2B8B68C70060DFB5 /* categorytest.swift */; };
-		BCFEEEBD2B8B68D30060DFB5 /* searchtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEBC2B8B68D30060DFB5 /* searchtest.swift */; };
 		BCFEEEC12B8B68E00060DFB5 /* settingtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEC02B8B68E00060DFB5 /* settingtest.swift */; };
 		BCFEEEC32B8B68EC0060DFB5 /* viewtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEC22B8B68EC0060DFB5 /* viewtest.swift */; };
-		BCFEEECE2B8B91430060DFB5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEECD2B8B91430060DFB5 /* Location.swift */; };
 		BCFEEED12B8B928D0060DFB5 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEED02B8B928D0060DFB5 /* LocationsDataService.swift */; };
 		BCFEEED52B8BA8FA0060DFB5 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEED42B8BA8FA0060DFB5 /* LocationsView.swift */; };
 		BCFEEED72B8BB0A80060DFB5 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEED62B8BB0A80060DFB5 /* LocationsListView.swift */; };
@@ -88,11 +85,8 @@
 		BCFEEEA82B8B67520060DFB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCFEEEB62B8B68B80060DFB5 /* modeltest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modeltest.swift; sourceTree = "<group>"; };
 		BCFEEEB82B8B68C00060DFB5 /* viewmodeltest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewmodeltest.swift; sourceTree = "<group>"; };
-		BCFEEEBA2B8B68C70060DFB5 /* categorytest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categorytest.swift; sourceTree = "<group>"; };
-		BCFEEEBC2B8B68D30060DFB5 /* searchtest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchtest.swift; sourceTree = "<group>"; };
 		BCFEEEC02B8B68E00060DFB5 /* settingtest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingtest.swift; sourceTree = "<group>"; };
 		BCFEEEC22B8B68EC0060DFB5 /* viewtest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewtest.swift; sourceTree = "<group>"; };
-		BCFEEECD2B8B91430060DFB5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		BCFEEED02B8B928D0060DFB5 /* LocationsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		BCFEEED42B8BA8FA0060DFB5 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		BCFEEED62B8BB0A80060DFB5 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
@@ -203,7 +197,6 @@
 			children = (
 				BCFEEEB62B8B68B80060DFB5 /* modeltest.swift */,
 				B7FA7B8F2B92AA6300150611 /* LaundryShopModel.swift */,
-				BCFEEECD2B8B91430060DFB5 /* Location.swift */,
 				BCBF274B2B930BAC003AAF18 /* OnboardingConstant.swift */,
 				BCBF275D2B939E8B003AAF18 /* SearchbarLocationModel.swift */,
 			);
@@ -231,7 +224,6 @@
 		BCFEEEB42B8B678E0060DFB5 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				BCFEEEBC2B8B68D30060DFB5 /* searchtest.swift */,
 				BCFEEED42B8BA8FA0060DFB5 /* LocationsView.swift */,
 				BCFEEED62B8BB0A80060DFB5 /* LocationsListView.swift */,
 				BCFEEED82B8BBB8A0060DFB5 /* LocationPreviewView.swift */,
@@ -246,7 +238,6 @@
 		BCFEEEB52B8B67960060DFB5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				BCFEEEBA2B8B68C70060DFB5 /* categorytest.swift */,
 				B7FA7B932B92AAB000150611 /* LaundryDetailView.swift */,
 				B7FA7B952B92AAFB00150611 /* ServiceCategoryView.swift */,
 				B7FA7B972B92AB0B00150611 /* AllServiceCategoryView.swift */,
@@ -345,7 +336,6 @@
 				BCBF27482B930207003AAF18 /* SignInView.swift in Sources */,
 				B7FA7B982B92AB0B00150611 /* AllServiceCategoryView.swift in Sources */,
 				BCBF27622B93BA72003AAF18 /* SideMenu.swift in Sources */,
-				BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */,
 				B7FA7B942B92AAB000150611 /* LaundryDetailView.swift in Sources */,
 				BCFEEEC12B8B68E00060DFB5 /* settingtest.swift in Sources */,
 				BCBF275C2B936D47003AAF18 /* SearchView.swift in Sources */,
@@ -354,7 +344,6 @@
 				B7FA7B962B92AAFB00150611 /* ServiceCategoryView.swift in Sources */,
 				BCBF27562B93568D003AAF18 /* SplashView.swift in Sources */,
 				BCFEEED12B8B928D0060DFB5 /* LocationsDataService.swift in Sources */,
-				BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */,
 				BCFEEED52B8BA8FA0060DFB5 /* LocationsView.swift in Sources */,
 				BCFEEEC12B8B68E00060DFB5 /* settingtest.swift in Sources */,
 				BCBF274E2B9315B7003AAF18 /* SignInDetailView.swift in Sources */,
@@ -362,11 +351,9 @@
 				BCBF274A2B930243003AAF18 /* AllOnboardingView.swift in Sources */,
 				BCBF27582B935B29003AAF18 /* FilterView.swift in Sources */,
 				BCBF275E2B939E8C003AAF18 /* SearchbarLocationModel.swift in Sources */,
-				BCFEEECE2B8B91430060DFB5 /* Location.swift in Sources */,
 				BCBF27522B931CD0003AAF18 /* OtpModifier.swift in Sources */,
 				BCFEEEB72B8B68B80060DFB5 /* modeltest.swift in Sources */,
 				B7FA7B9C2B92AB4A00150611 /* AllClothesCategoryView.swift in Sources */,
-				BCFEEEBD2B8B68D30060DFB5 /* searchtest.swift in Sources */,
 				B7FA7BA02B92AB8C00150611 /* ServiceScrollView.swift in Sources */,
 				BCFEEED92B8BBB8A0060DFB5 /* LocationPreviewView.swift in Sources */,
 				BCFEEEB92B8B68C00060DFB5 /* viewmodeltest.swift in Sources */,

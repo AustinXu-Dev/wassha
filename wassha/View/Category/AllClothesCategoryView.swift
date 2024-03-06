@@ -47,7 +47,7 @@ struct AllClothesCategoryView: View {
                 VStack(alignment:.center){
                     Button(action: {}, label: {
                         NavigationLink {
-                            
+                            // Go to Recipt Here
                         } label: {
                             
                             RoundedRectangle(cornerRadius: 12)
@@ -79,12 +79,12 @@ struct AllClothesCategoryView: View {
                 } .padding()
                 
             }
-        }            .background(Color.wasshaBackgroundColor)
-            .ignoresSafeArea(.all)
+        }            
+        .background(Color.wasshaBackgroundColor)
 
     }
 }
-#Preview {
-    AllClothesCategoryView(laundryShop: LaundryShopModel(id: 1, name: "", image: "", rating: 1.3, phone: 1939933, distance: 1.4))
-}
-
+//#Preview {
+//    AllClothesCategoryView(laundryShop: LaundryShopModel(id: 1, name: "", image: "", rating: 1.3, phone: 1939933, distance: 1.4))
+//}
+//

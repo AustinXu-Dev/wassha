@@ -65,7 +65,7 @@ struct LaundryDetailView: View {
        
     }
 }
-#Preview {
-    LaundryDetailView(laundryShop: .constant(LaundryShopModel(id: 1, name: "Test", image: "laundry_1_image", rating: 1.2, phone: 9393993, distance: 2.4)))
-}
+//#Preview {
+//    LaundryDetailView(laundryShop: .constant(LaundryShopModel(id: 1, name: "Test", image: "laundry_1_image", rating: 1.2, phone: 9393993, distance: 2.4)))
+//}
 

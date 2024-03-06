@@ -11,6 +11,7 @@ struct LaundryScrollView: View {
             ScrollView(.horizontal,showsIndicators: false){
                 HStack(spacing:0){
                     ForEach(laundries,id:\.id){ laundry in
+                        
                         NavigationLink {
                             AllServiceCategoryView(laundryShop: laundry)
                         } label: {
@@ -71,11 +72,11 @@ struct LaundryScrollView: View {
             
         }
     }
-#Preview {
-    LaundryScrollView(laundries: .constant([LaundryShopModel(id: 1, name: "WashXpress เอแบค​", image: "laundry_1_image", rating: 1.2, phone: 29949409, distance: 1.5),
-    LaundryShopModel(id: 2, name: "Test", image: "laundry_1_image", rating: 1.2, phone: 29949409, distance: 1.5)]
-    )
-    
-    )
-}
+//#Preview {
+//    LaundryScrollView(laundries: .constant([LaundryShopModel(id: 1, name: "WashXpress เอแบค​", image: "laundry_1_image", rating: 1.2, phone: 29949409, distance: 1.5),
+//    LaundryShopModel(id: 2, name: "Test", image: "laundry_1_image", rating: 1.2, phone: 29949409, distance: 1.5)]
+//    )
+//    
+//    )
+//}
 

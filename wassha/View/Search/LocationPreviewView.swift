@@ -10,7 +10,7 @@ import SwiftUI
 struct LocationPreviewView: View {
     
     @EnvironmentObject private var vm: LocationViewModel
-    let location: Location
+    let location: LaundryShopModel
     
     var body: some View {
         HStack(alignment: .bottom, spacing: 0){
@@ -59,12 +59,16 @@ extension LocationPreviewView{
     }
     
     private var learnMoreButton: some View{
+
         Button(action: {
             
         }, label: {
-            Text("Learn more")
-                .font(.headline)
-                .frame(width: 125, height: 35)
+            NavigationLink(destination: AllServiceCategoryView(laundryShop: location)) {
+                Text("Detail")
+                    .font(.headline)
+                    .frame(width: 125, height: 35)
+            }
+            .foregroundStyle(.white)
         })
         .buttonStyle(.borderedProminent)
     }
