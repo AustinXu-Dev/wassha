@@ -119,7 +119,6 @@
 		394102DA2B8DC38300410009 /* Kelvin */ = {
 			isa = PBXGroup;
 			children = (
-				397D4D752B8E58310096DE21 /* ViewModel */,
 				394102DB2B8DC3B600410009 /* OrderOverviewView.swift */,
 				394102DD2B8DD34B00410009 /* RecepitView.swift */,
 				392A77192B919B1D0013CCC2 /* CameraView.swift */,
@@ -129,14 +128,6 @@
 			path = Kelvin;
 			sourceTree = "<group>";
 		};
-		397D4D752B8E58310096DE21 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				397D4D762B8E58400096DE21 /* OrderDetailViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		}
 		BCBF273D2B92F330003AAF18 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +210,7 @@
 		BCFEEEB02B8B67650060DFB5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+                97D4D762B8E58400096DE21 /* OrderDetailViewModel.swift */,
 				BCFEEEB82B8B68C00060DFB5 /* viewmodeltest.swift */,
 				BCBF27392B92EF8B003AAF18 /* LocationManagerViewModel.swift */,
 				BCBF273B2B92EFA2003AAF18 /* LocationViewModel.swift */,
