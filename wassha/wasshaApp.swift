@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct wasshaApp: App {
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           OrderOverviewView()
         }
     }
 }

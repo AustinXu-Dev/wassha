@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		392A771A2B919B1D0013CCC2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A77192B919B1D0013CCC2 /* CameraView.swift */; };
+		394102DC2B8DC3B600410009 /* OrderOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394102DB2B8DC3B600410009 /* OrderOverviewView.swift */; };
+		394102DE2B8DD34B00410009 /* RecepitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394102DD2B8DD34B00410009 /* RecepitView.swift */; };
+		396C857D2B9838AC0074C1C6 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C857C2B9838AC0074C1C6 /* AddressView.swift */; };
+		396C857F2B98B5450074C1C6 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C857E2B98B5440074C1C6 /* CheckoutView.swift */; };
+		397D4D772B8E58400096DE21 /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D4D762B8E58400096DE21 /* OrderDetailViewModel.swift */; };
 		BCFEEEA22B8B67500060DFB5 /* wasshaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEA12B8B67500060DFB5 /* wasshaApp.swift */; };
 		BCFEEEA42B8B67500060DFB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEEEA32B8B67500060DFB5 /* ContentView.swift */; };
 		BCFEEEA62B8B67520060DFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFEEEA52B8B67520060DFB5 /* Assets.xcassets */; };
@@ -21,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		392A77192B919B1D0013CCC2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		394102DB2B8DC3B600410009 /* OrderOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderOverviewView.swift; sourceTree = "<group>"; };
+		394102DD2B8DD34B00410009 /* RecepitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepitView.swift; sourceTree = "<group>"; };
+		396C857C2B9838AC0074C1C6 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		396C857E2B98B5440074C1C6 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		397D4D762B8E58400096DE21 /* OrderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModel.swift; sourceTree = "<group>"; };
 		BCFEEE9E2B8B67500060DFB5 /* wassha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wassha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFEEEA12B8B67500060DFB5 /* wasshaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wasshaApp.swift; sourceTree = "<group>"; };
 		BCFEEEA32B8B67500060DFB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +58,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		394102DA2B8DC38300410009 /* Kelvin */ = {
+			isa = PBXGroup;
+			children = (
+				397D4D752B8E58310096DE21 /* ViewModel */,
+				394102DB2B8DC3B600410009 /* OrderOverviewView.swift */,
+				394102DD2B8DD34B00410009 /* RecepitView.swift */,
+				392A77192B919B1D0013CCC2 /* CameraView.swift */,
+				396C857C2B9838AC0074C1C6 /* AddressView.swift */,
+				396C857E2B98B5440074C1C6 /* CheckoutView.swift */,
+			);
+			path = Kelvin;
+			sourceTree = "<group>";
+		};
+		397D4D752B8E58310096DE21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				397D4D762B8E58400096DE21 /* OrderDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		BCFEEE952B8B67500060DFB5 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +98,7 @@
 		BCFEEEA02B8B67500060DFB5 /* wassha */ = {
 			isa = PBXGroup;
 			children = (
+				394102DA2B8DC38300410009 /* Kelvin */,
 				BCFEEEB12B8B676E0060DFB5 /* Model */,
 				BCFEEEB02B8B67650060DFB5 /* ViewModel */,
 				BCFEEEAF2B8B675E0060DFB5 /* View */,
@@ -214,9 +248,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394102DE2B8DD34B00410009 /* RecepitView.swift in Sources */,
 				BCFEEEC32B8B68EC0060DFB5 /* viewtest.swift in Sources */,
+				396C857F2B98B5450074C1C6 /* CheckoutView.swift in Sources */,
+				392A771A2B919B1D0013CCC2 /* CameraView.swift in Sources */,
 				BCFEEEA42B8B67500060DFB5 /* ContentView.swift in Sources */,
+				397D4D772B8E58400096DE21 /* OrderDetailViewModel.swift in Sources */,
+				394102DC2B8DC3B600410009 /* OrderOverviewView.swift in Sources */,
 				BCFEEEBB2B8B68C70060DFB5 /* categorytest.swift in Sources */,
+				396C857D2B9838AC0074C1C6 /* AddressView.swift in Sources */,
 				BCFEEEC12B8B68E00060DFB5 /* settingtest.swift in Sources */,
 				BCFEEEBF2B8B68D70060DFB5 /* hometest.swift in Sources */,
 				BCFEEEB72B8B68B80060DFB5 /* modeltest.swift in Sources */,
@@ -356,9 +396,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wassha/Preview Content\"";
-				DEVELOPMENT_TEAM = A89P8LLWX2;
+				DEVELOPMENT_TEAM = 27KRXYPLFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -369,7 +410,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tetrabyte.wassha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tetrabyte.wassha1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -385,9 +426,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wassha/Preview Content\"";
-				DEVELOPMENT_TEAM = A89P8LLWX2;
+				DEVELOPMENT_TEAM = 27KRXYPLFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -398,7 +440,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tetrabyte.wassha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tetrabyte.wassha1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
