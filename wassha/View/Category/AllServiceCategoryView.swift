@@ -70,24 +70,16 @@ struct AllServiceCategoryView: View {
                     })
                     .padding(.vertical,20)
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                 } .padding()
                 
             }
            
         } .background(Color.wasshaBackgroundColor)
-            .ignoresSafeArea(.all)
+//            .ignoresSafeArea(.all)
            
     }
 }
-#Preview {
-    AllServiceCategoryView(laundryShop: LaundryShopModel(id: 1, name: "Test", image: "laundry_1_image", rating: 1.2, phone: 9393993, distance: 2.4))
-}
-
+//#Preview {
+//    AllServiceCategoryView(laundryShop: LaundryShopModel(id: 1, name: "Test", image: "laundry_1_image", rating: 1.2, phone: 9393993, distance: 2.4))
+//}
+//

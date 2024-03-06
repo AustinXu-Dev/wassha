@@ -26,7 +26,7 @@ struct LocationsListView: View {
 }
 
 extension LocationsListView{
-    private func listRowView(location: Location) -> some View {
+    private func listRowView(location: LaundryShopModel) -> some View {
         HStack{
             if let imageName = location.imageName.first {
                 Image(imageName)

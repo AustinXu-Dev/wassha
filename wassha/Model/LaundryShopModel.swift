@@ -1,25 +1,43 @@
 import Foundation
 import Observation
-@Observable class LaundryShopModel:Identifiable {
-    var id:Int
-    var name:String
-    var image:String
-    var rating:Float
-    var phone:Int
-    var distance:Float
+import MapKit
+//
+//@Observable class LaundryShopModel:Identifiable {
+//    var id:Int
+//    var name:String
+//    var image:String
+//    var rating:Float
+//    var phone:Int
+//    var distance:Float
+//    
+//    
+//    init(id: Int, name: String, image: String, rating: Float, phone: Int,distance:Float) {
+//        self.id = id
+//        self.name = name
+//        self.image = image
+//        self.rating = rating
+//        self.phone = phone
+//        self.distance = distance
+//    }
+//}
+
+struct LaundryShopModel: Identifiable,Equatable{
+    let id = UUID().uuidString
+    let name: String
+    let image: String
+    let rating: Float
+    let phone: Int
+    let distance: Float
+    let coordinates: CLLocationCoordinate2D
+    let description: String
+    let imageName: [String]
     
     
-    init(id: Int, name: String, image: String, rating: Float, phone: Int,distance:Float) {
-        self.id = id
-        self.name = name
-        self.image = image
-        self.rating = rating
-        self.phone = phone
-        self.distance = distance
+    static func == (lhs: LaundryShopModel, rhs: LaundryShopModel) -> Bool {
+        lhs.id == rhs.id
     }
-    
-    
 }
+
 @Observable class ServiceType: Identifiable {
     
     var id = UUID()
@@ -36,6 +54,7 @@ import Observation
     }
     
 }
+
 @Observable class ClothesType: Identifiable {
     
     var id = UUID()
@@ -77,3 +96,5 @@ enum QuickServiceModel:String,CaseIterable {
     case dryclean = "Dry Clean"
     
 }
+
+

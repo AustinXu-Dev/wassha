@@ -1,13 +1,12 @@
 import SwiftUI
 import CoreLocation
 struct HomeView: View {
-    @State var laundries : [LaundryShopModel] = [
-    
-        LaundryShopModel(id: 1, name: "Laundry Maid Cafe", image: "laundry_1_image", rating: 5, phone: 0642396256, distance: 1.8),
-        LaundryShopModel(id: 2, name: "WashXpress เอแบค​", image: "laundry_2_image", rating: 3.7, phone: 0642396256, distance: 2.9),
-        LaundryShopModel(id: 3, name: "WashXpress เอแบค​", image: "laundry_3_image", rating: 3.2, phone: 0642396256, distance: 2.3)
-    
-    ]
+//    @State var laundries : [LaundryShopModel] = [
+//        LaundryShopModel(id: 1, name: "Laundry Maid Cafe", image: "laundry_1_image", rating: 5, phone: 0642396256, distance: 1.8),
+//        LaundryShopModel(id: 2, name: "WashXpress เอแบค​", image: "laundry_2_image", rating: 3.7, phone: 0642396256, distance: 2.9),
+//        LaundryShopModel(id: 3, name: "WashXpress เอแบค​", image: "laundry_3_image", rating: 3.2, phone: 0642396256, distance: 2.3)
+//    ]
+    @State var laundries: [LaundryShopModel] = LocationsDataService.locations
     @State var searchKeyword:String = ""
     @State var locationVM = LocationManagerViewModel()
     @State var isSearchng = false
@@ -82,7 +81,8 @@ struct HomeView: View {
                     case .searchView:
                         SearchView()
                     case .currentLocation:
-                        Text("current")
+                        LocationsView()
+                            .environmentObject(LocationViewModel())
                     case .locateOnMap:
                         LocationsView()
                             .environmentObject(LocationViewModel())

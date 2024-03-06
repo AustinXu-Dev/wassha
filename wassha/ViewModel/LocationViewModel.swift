@@ -12,10 +12,10 @@ import SwiftUI
 class LocationViewModel: ObservableObject{
     
     // All locations
-    @Published var locations: [Location]
+    @Published var locations: [LaundryShopModel]
     
     // Current location
-    @Published var mapLocation: Location{
+    @Published var mapLocation: LaundryShopModel{
         didSet{
             updateMapRegion(location: mapLocation)
         }
@@ -36,7 +36,7 @@ class LocationViewModel: ObservableObject{
         self.updateMapRegion(location: locations.first!)
     }
     
-    private func updateMapRegion(location: Location){
+    private func updateMapRegion(location: LaundryShopModel){
         withAnimation(.easeInOut){
             mapRegion = .region(MKCoordinateRegion(center: location.coordinates, span: mapSpan))
         }
@@ -48,7 +48,7 @@ class LocationViewModel: ObservableObject{
         }
     }
     
-    func showNextLocation(location: Location) {
+    func showNextLocation(location: LaundryShopModel) {
         withAnimation(.easeInOut){
             mapLocation = location
             showLocationList = false

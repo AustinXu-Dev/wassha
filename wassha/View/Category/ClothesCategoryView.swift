@@ -2,15 +2,7 @@ import SwiftUI
 
 struct ClothesCategoryView: View {
     @Binding var clothesTypes:[ClothesType]
-
-
-  
     //    let horizontalRows = [ GridItem(.adaptive(minimum: 80))]
-    
-    
-    
-    
-    
     
     var body: some View {
         LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 0){
@@ -67,16 +59,6 @@ struct ClothesCategoryView: View {
     ClothesType(clothesType: "Denim", clothesTypeImage: "Denim", isSelected: false),
     ClothesType(clothesType: "Polyester", clothesTypeImage: "Polyester", isSelected: false),
     ClothesType(clothesType: "Woollen", clothesTypeImage: "Woollen", isSelected: false),
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     ]))
     
