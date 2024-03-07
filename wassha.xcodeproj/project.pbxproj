@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B301CA5A2B988FEF001FD03C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B301CA592B988FEF001FD03C /* GoogleService-Info.plist */; };
+		B301CA5D2B989021001FD03C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301CA5C2B989021001FD03C /* User.swift */; };
+		B301CA602B989280001FD03C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B301CA5F2B989280001FD03C /* FirebaseAnalytics */; };
+		B301CA622B989280001FD03C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = B301CA612B989280001FD03C /* FirebaseAnalyticsOnDeviceConversion */; };
+		B301CA642B989280001FD03C /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B301CA632B989280001FD03C /* FirebaseAnalyticsSwift */; };
+		B301CA662B989280001FD03C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = B301CA652B989280001FD03C /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		B301CA682B989280001FD03C /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = B301CA672B989280001FD03C /* FirebaseAppCheck */; };
+		B301CA6B2B9892A9001FD03C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B301CA6A2B9892A9001FD03C /* FirebaseAuth */; };
+		B301CA6D2B9892B0001FD03C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B301CA6C2B9892B0001FD03C /* FirebaseFirestore */; };
+		B301CA6F2B989624001FD03C /* GoogleSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B301CA6E2B989624001FD03C /* GoogleSignInViewModel.swift */; };
+		B32AA3042B9897E10023C792 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32AA3032B9897E10023C792 /* Extensions.swift */; };
+		B32AA3062B98AA280023C792 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32AA3052B98AA270023C792 /* MainViewViewModel.swift */; };
+		B3B5FBB12B98B439006C7E8F /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5FBB02B98B439006C7E8F /* LoginViewViewModel.swift */; };
+		B3B5FBB32B98CD2B006C7E8F /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5FBB22B98CD2B006C7E8F /* RegistrationView.swift */; };
+		B3B5FBB62B9A21E6006C7E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5FBB52B9A21E6006C7E8F /* AppDelegate.swift */; };
+		B3B5FBB92B9A2223006C7E8F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B3B5FBB82B9A2223006C7E8F /* GoogleSignIn */; };
+		B3B5FBBB2B9A2223006C7E8F /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3B5FBBA2B9A2223006C7E8F /* GoogleSignInSwift */; };
+		B3B5FBBD2B9A2293006C7E8F /* Application_utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5FBBC2B9A2293006C7E8F /* Application_utility.swift */; };
 		B7FA7B902B92AA6300150611 /* LaundryShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA7B8F2B92AA6300150611 /* LaundryShopModel.swift */; };
 		B7FA7B942B92AAB000150611 /* LaundryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA7B932B92AAB000150611 /* LaundryDetailView.swift */; };
 		B7FA7B962B92AAFB00150611 /* ServiceCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA7B952B92AAFB00150611 /* ServiceCategoryView.swift */; };
@@ -50,6 +68,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B301CA592B988FEF001FD03C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B301CA5B2B989004001FD03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B301CA5C2B989021001FD03C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B301CA6E2B989624001FD03C /* GoogleSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewModel.swift; sourceTree = "<group>"; };
+		B32AA3032B9897E10023C792 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B32AA3052B98AA270023C792 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		B3B5FBB02B98B439006C7E8F /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		B3B5FBB22B98CD2B006C7E8F /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		B3B5FBB52B9A21E6006C7E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3B5FBBC2B9A2293006C7E8F /* Application_utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application_utility.swift; sourceTree = "<group>"; };
 		B7FA7B8F2B92AA6300150611 /* LaundryShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryShopModel.swift; sourceTree = "<group>"; };
 		B7FA7B932B92AAB000150611 /* LaundryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryDetailView.swift; sourceTree = "<group>"; };
 		B7FA7B952B92AAFB00150611 /* ServiceCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryView.swift; sourceTree = "<group>"; };
@@ -98,12 +126,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B5FBBB2B9A2223006C7E8F /* GoogleSignInSwift in Frameworks */,
+				B301CA642B989280001FD03C /* FirebaseAnalyticsSwift in Frameworks */,
+				B3B5FBB92B9A2223006C7E8F /* GoogleSignIn in Frameworks */,
+				B301CA6B2B9892A9001FD03C /* FirebaseAuth in Frameworks */,
+				B301CA602B989280001FD03C /* FirebaseAnalytics in Frameworks */,
+				B301CA622B989280001FD03C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				B301CA682B989280001FD03C /* FirebaseAppCheck in Frameworks */,
+				B301CA662B989280001FD03C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				B301CA6D2B9892B0001FD03C /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B301CA692B9892A9001FD03C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3B5FBB42B9A21D9006C7E8F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5FBB52B9A21E6006C7E8F /* AppDelegate.swift */,
+				B3B5FBBC2B9A2293006C7E8F /* Application_utility.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		BCBF273D2B92F330003AAF18 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +177,7 @@
 				BCBF274D2B9315B7003AAF18 /* SignInDetailView.swift */,
 				BCBF27512B931CCF003AAF18 /* OtpModifier.swift */,
 				BCBF27532B931D12003AAF18 /* OtpFormFieldView.swift */,
+				B3B5FBB22B98CD2B006C7E8F /* RegistrationView.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -133,6 +187,7 @@
 			children = (
 				BCFEEEA02B8B67500060DFB5 /* wassha */,
 				BCFEEE9F2B8B67500060DFB5 /* Products */,
+				B301CA692B9892A9001FD03C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +202,9 @@
 		BCFEEEA02B8B67500060DFB5 /* wassha */ = {
 			isa = PBXGroup;
 			children = (
+				B3B5FBB42B9A21D9006C7E8F /* Helper */,
+				B301CA5B2B989004001FD03C /* Info.plist */,
+				B301CA592B988FEF001FD03C /* GoogleService-Info.plist */,
 				BCFEEECF2B8B92640060DFB5 /* DataService */,
 				BCFEEEB12B8B676E0060DFB5 /* Model */,
 				BCFEEEB02B8B67650060DFB5 /* ViewModel */,
@@ -156,6 +214,7 @@
 				B7FA7BA32B92ABB100150611 /* ColorExtension.swift */,
 				BCFEEEA52B8B67520060DFB5 /* Assets.xcassets */,
 				BCFEEEA72B8B67520060DFB5 /* Preview Content */,
+				B32AA3032B9897E10023C792 /* Extensions.swift */,
 			);
 			path = wassha;
 			sourceTree = "<group>";
@@ -188,6 +247,9 @@
 				BCFEEEB82B8B68C00060DFB5 /* viewmodeltest.swift */,
 				BCBF27392B92EF8B003AAF18 /* LocationManagerViewModel.swift */,
 				BCBF273B2B92EFA2003AAF18 /* LocationViewModel.swift */,
+				B301CA6E2B989624001FD03C /* GoogleSignInViewModel.swift */,
+				B32AA3052B98AA270023C792 /* MainViewViewModel.swift */,
+				B3B5FBB02B98B439006C7E8F /* LoginViewViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -199,6 +261,7 @@
 				B7FA7B8F2B92AA6300150611 /* LaundryShopModel.swift */,
 				BCBF274B2B930BAC003AAF18 /* OnboardingConstant.swift */,
 				BCBF275D2B939E8B003AAF18 /* SearchbarLocationModel.swift */,
+				B301CA5C2B989021001FD03C /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +334,17 @@
 			dependencies = (
 			);
 			name = wassha;
+			packageProductDependencies = (
+				B301CA5F2B989280001FD03C /* FirebaseAnalytics */,
+				B301CA612B989280001FD03C /* FirebaseAnalyticsOnDeviceConversion */,
+				B301CA632B989280001FD03C /* FirebaseAnalyticsSwift */,
+				B301CA652B989280001FD03C /* FirebaseAnalyticsWithoutAdIdSupport */,
+				B301CA672B989280001FD03C /* FirebaseAppCheck */,
+				B301CA6A2B9892A9001FD03C /* FirebaseAuth */,
+				B301CA6C2B9892B0001FD03C /* FirebaseFirestore */,
+				B3B5FBB82B9A2223006C7E8F /* GoogleSignIn */,
+				B3B5FBBA2B9A2223006C7E8F /* GoogleSignInSwift */,
+			);
 			productName = wassha;
 			productReference = BCFEEE9E2B8B67500060DFB5 /* wassha.app */;
 			productType = "com.apple.product-type.application";
@@ -299,6 +373,10 @@
 				Base,
 			);
 			mainGroup = BCFEEE952B8B67500060DFB5;
+			packageReferences = (
+				B301CA5E2B989280001FD03C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B3B5FBB72B9A2223006C7E8F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = BCFEEE9F2B8B67500060DFB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -313,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B301CA5A2B988FEF001FD03C /* GoogleService-Info.plist in Resources */,
 				BCFEEEA92B8B67520060DFB5 /* Preview Assets.xcassets in Resources */,
 				BCFEEEA62B8B67520060DFB5 /* Assets.xcassets in Resources */,
 			);
@@ -332,18 +411,23 @@
 				BCFEEEC32B8B68EC0060DFB5 /* viewtest.swift in Sources */,
 				BCBF273F2B92F34A003AAF18 /* OnboardingView.swift in Sources */,
 				BCFEEEA42B8B67500060DFB5 /* ContentView.swift in Sources */,
+				B3B5FBBD2B9A2293006C7E8F /* Application_utility.swift in Sources */,
 				BCBF27452B92FE02003AAF18 /* OnboardingThreeView.swift in Sources */,
 				BCBF27482B930207003AAF18 /* SignInView.swift in Sources */,
 				B7FA7B982B92AB0B00150611 /* AllServiceCategoryView.swift in Sources */,
 				BCBF27622B93BA72003AAF18 /* SideMenu.swift in Sources */,
+				B3B5FBB12B98B439006C7E8F /* LoginViewViewModel.swift in Sources */,
 				B7FA7B942B92AAB000150611 /* LaundryDetailView.swift in Sources */,
 				BCFEEEC12B8B68E00060DFB5 /* settingtest.swift in Sources */,
+				B32AA3042B9897E10023C792 /* Extensions.swift in Sources */,
 				BCBF275C2B936D47003AAF18 /* SearchView.swift in Sources */,
 				BCBF27412B92F774003AAF18 /* OnboardingOneView.swift in Sources */,
 				BCBF27432B92FB0C003AAF18 /* OnboardingTwoView.swift in Sources */,
 				B7FA7B962B92AAFB00150611 /* ServiceCategoryView.swift in Sources */,
 				BCBF27562B93568D003AAF18 /* SplashView.swift in Sources */,
 				BCFEEED12B8B928D0060DFB5 /* LocationsDataService.swift in Sources */,
+				B301CA6F2B989624001FD03C /* GoogleSignInViewModel.swift in Sources */,
+				B3B5FBB62B9A21E6006C7E8F /* AppDelegate.swift in Sources */,
 				BCFEEED52B8BA8FA0060DFB5 /* LocationsView.swift in Sources */,
 				BCFEEEC12B8B68E00060DFB5 /* settingtest.swift in Sources */,
 				BCBF274E2B9315B7003AAF18 /* SignInDetailView.swift in Sources */,
@@ -353,6 +437,7 @@
 				BCBF275E2B939E8C003AAF18 /* SearchbarLocationModel.swift in Sources */,
 				BCBF27522B931CD0003AAF18 /* OtpModifier.swift in Sources */,
 				BCFEEEB72B8B68B80060DFB5 /* modeltest.swift in Sources */,
+				B301CA5D2B989021001FD03C /* User.swift in Sources */,
 				B7FA7B9C2B92AB4A00150611 /* AllClothesCategoryView.swift in Sources */,
 				B7FA7BA02B92AB8C00150611 /* ServiceScrollView.swift in Sources */,
 				BCFEEED92B8BBB8A0060DFB5 /* LocationPreviewView.swift in Sources */,
@@ -360,10 +445,12 @@
 				BCFEEEA22B8B67500060DFB5 /* wasshaApp.swift in Sources */,
 				B7FA7B9E2B92AB7600150611 /* LaundryScrollView.swift in Sources */,
 				B7FA7B902B92AA6300150611 /* LaundryShopModel.swift in Sources */,
+				B3B5FBB32B98CD2B006C7E8F /* RegistrationView.swift in Sources */,
 				BCBF27602B93AFA5003AAF18 /* SearchBar.swift in Sources */,
 				B7FA7BA22B92AB9F00150611 /* HomeView.swift in Sources */,
 				B7FA7BA42B92ABB100150611 /* ColorExtension.swift in Sources */,
 				BCFEEED72B8BB0A80060DFB5 /* LocationsListView.swift in Sources */,
+				B32AA3062B98AA280023C792 /* MainViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,9 +585,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wassha/Preview Content\"";
-				DEVELOPMENT_TEAM = A89P8LLWX2;
+				DEVELOPMENT_TEAM = MAFKHQX2GF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wassha/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = wassha;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need to get your location for identifying your address";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to get your location for identifying your address";
@@ -514,7 +602,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tetrabyte.wassha.austin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tetrabyte.wassha.has;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -530,9 +618,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wassha/Preview Content\"";
-				DEVELOPMENT_TEAM = A89P8LLWX2;
+				DEVELOPMENT_TEAM = MAFKHQX2GF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wassha/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = wassha;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need to get your location for identifying your address";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to get your location for identifying your address";
@@ -546,7 +635,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tetrabyte.wassha.austin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tetrabyte.wassha.has;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -576,6 +665,73 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B301CA5E2B989280001FD03C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.0;
+			};
+		};
+		B3B5FBB72B9A2223006C7E8F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B301CA5F2B989280001FD03C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B301CA5E2B989280001FD03C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B301CA612B989280001FD03C /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B301CA5E2B989280001FD03C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		B301CA632B989280001FD03C /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B301CA5E2B989280001FD03C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		B301CA652B989280001FD03C /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B301CA5E2B989280001FD03C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		B301CA672B989280001FD03C /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B301CA5E2B989280001FD03C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		B301CA6A2B9892A9001FD03C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B301CA5E2B989280001FD03C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B301CA6C2B9892B0001FD03C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B301CA5E2B989280001FD03C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		B3B5FBB82B9A2223006C7E8F /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3B5FBB72B9A2223006C7E8F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		B3B5FBBA2B9A2223006C7E8F /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3B5FBB72B9A2223006C7E8F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BCFEEE962B8B67500060DFB5 /* Project object */;
 }

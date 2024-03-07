@@ -15,6 +15,7 @@ struct OtpFormFieldView: View {
         case  pinOne, pinTwo, pinThree, pinFour, pinFive, pinSix
     }
 
+    @StateObject var registrationViewModel = GoogleSignInViewModel()
     @FocusState private var pinFocusState : FocusPin?
     @State var pinOne: String = ""
     @State var pinTwo: String = ""
@@ -22,7 +23,7 @@ struct OtpFormFieldView: View {
     @State var pinFour: String = ""
     @State var pinFive: String = ""
     @State var pinSix: String = ""
-
+    
 
     //MARK -> BODY
     var body: some View {
@@ -49,6 +50,8 @@ struct OtpFormFieldView: View {
                 Button {
                     // Verify Action works here
                     print(pinOne, pinTwo, pinThree, pinFour, pinFive, pinSix)
+                    
+//                    registrationViewModel.verifyOTP()
                     
                     
                 } label: {

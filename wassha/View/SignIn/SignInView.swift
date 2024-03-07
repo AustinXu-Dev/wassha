@@ -11,6 +11,9 @@ struct SignInView: View {
     
     @State var phoneNumberAndEmail: String = ""
     @State var password: String = ""
+    @State var showSignup: Bool = false
+    @StateObject var loginViewModel = LoginViewViewModel()
+    @StateObject private var vm = GoogleSignInViewModel()
     
     var body: some View {
         NavigationStack{
@@ -56,6 +59,15 @@ struct SignInView: View {
                 
                 .navigationBarBackButtonHidden()
             }
+            
+            .navigationDestination(for: String.self) { value in
+                if value == "signup"{
+                    SignInDetailView()
+                }
+//                if value == "GoToOTP"{
+//                    RegistrationView()
+//                }
+            }
         }
     }
 }
@@ -64,13 +76,13 @@ extension SignInView{
     
     // MARK: Email Field
     private var emailField: some View{
-        TextField("Enter Mobile Number/ Email Id.", text: $phoneNumberAndEmail)
+        TextField("Enter Mobile Number/ Email Id.", text: $loginViewModel.email)
         .textFieldStyle(.roundedBorder)
     }
     
     // MARK: Password Field
     private var passwordField: some View{
-        SecureField("Enter Password", text: $password)
+        SecureField("Enter Password", text: $loginViewModel.password)
         .textFieldStyle(.roundedBorder)
     }
     
@@ -78,6 +90,7 @@ extension SignInView{
     private var signinbutton: some View{
         Button {
             // Sign in action here
+            loginViewModel.login()
         } label: {
             Text("Sign In")
                 .frame(width: 100, height: 40)
@@ -90,13 +103,12 @@ extension SignInView{
     // MARK: Sign in with Google Button
     private var signinwithgoogle: some View{
         Button {
-            // Sign in with Google action here
+            signInWithGoogle()
         } label: {
             Image("ios_light_sq_SI")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 250)
-            
         }
     }
     
@@ -107,8 +119,22 @@ extension SignInView{
                 .font(.system(size: 15))
             Button("Sign up") {
                 //Sign up action here
+                self.showSignup.toggle()
             }.font(.system(size: 15))
                 .foregroundStyle(.white)
+                .alert("Signing UP", isPresented: $showSignup) {
+                    NavigationLink(value: "signup") {
+                        Text("OK")
+                    }
+                }
+        }
+    }
+    
+    private func signInWithGoogle() {
+        vm.signInWithGoogle(presenting: Application_utility.rootViewController) { error in
+            DispatchQueue.main.async {
+                print(error?.localizedDescription ?? "error")
+            }
         }
     }
 }

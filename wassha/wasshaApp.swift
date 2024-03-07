@@ -6,27 +6,31 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct wasshaApp: App {
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject private var locationVM = LocationViewModel()
 
     var body: some Scene {
+        
         WindowGroup {
-//            ContentView()
-//            LocationsView()
-//                .environmentObject(locationVM)
+            //            ContentView()
+            //            LocationsView()
+            //                .environmentObject(locationVM)
             
-//            if hasSeenOnboardingView{
-//                HomeView()
-//            }
-//            else{
-//                OnboardingView()
-//            }
+            //            if hasSeenOnboardingView{
+            //                HomeView()
+            //            }
+            //            else{
+            //                OnboardingView()
+            //            }
             
-//            SplashView()
-            HomeView()
+            //            SplashView()
+//            HomeView()
+            SplashView()
         }
     }
 }

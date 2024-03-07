@@ -13,7 +13,9 @@ struct SignInDetailView: View {
     @State var email: String = ""
     @State var name: String = ""
     @State var password: String = ""
-    
+    @StateObject var registrationViewModel = GoogleSignInViewModel()
+    @State private var otp: Bool = false
+    @State private var isOTPPresented = false
     
     var body: some View {
         ZStack{
@@ -92,14 +94,28 @@ extension SignInDetailView{
     
     private var signupbutton: some View{
         Button {
-            // Sign Up action here
+//            registrationViewModel.register()
+//            registrationViewModel.sendOTP()
+            print("OTP Button")
+//            self.otp.toggle()
+            isOTPPresented = true
         } label: {
             Text("Sign Up")
                 .frame(width: 100, height: 40)
                 .foregroundStyle(.blue)
             
-        }.background(.white)
+            
+        }
+        .sheet(isPresented: $isOTPPresented){
+//            OTPVerificationView(viewModel: registrationViewModel)
+        }
+        .background(.white)
             .clipShape(RoundedRectangle(cornerRadius: 5))
+//            .alert("Signing UP", isPresented: $otp) {
+//                NavigationLink(value: "GoToOTP") {
+//                    Text("OK")
+//                }
+//            }
     }
     
     private var loginbutton: some View{
