@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct wasshaApp: App {
 
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject private var locationVM = LocationViewModel()
 
     var body: some Scene {
@@ -26,7 +27,8 @@ struct wasshaApp: App {
 //            }
             
 //            SplashView()
-            HomeView()
+//            HomeView()
+            SplashView()
         }
     }
 }

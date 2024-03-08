@@ -11,13 +11,19 @@ struct SplashView: View {
     
     @State var isActive: Bool = false
     @AppStorage(Constants.currentOnboardingVersion) private var hasSeenOnboardingView = false
+    @AppStorage("isSignIn") var isSignIn = false
 
     
     var body: some View {
         ZStack {
             if self.isActive {
                 if hasSeenOnboardingView{
-                    SignInView()
+//                    SignInView()
+                    if isSignIn{
+                        HomeView()
+                    } else {
+                        SignInView()
+                    }
                 }else{
                     OnboardingView()
                 }

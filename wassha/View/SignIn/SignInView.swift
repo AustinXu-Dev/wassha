@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+import GoogleSignIn
 
 struct SignInView: View {
     
     @State var phoneNumberAndEmail: String = ""
     @State var password: String = ""
+    @StateObject private var vm = GoogleSignInViewModel()
+    
     
     var body: some View {
         NavigationStack{
@@ -65,13 +69,13 @@ extension SignInView{
     // MARK: Email Field
     private var emailField: some View{
         TextField("Enter Mobile Number/ Email Id.", text: $phoneNumberAndEmail)
-        .textFieldStyle(.roundedBorder)
+            .textFieldStyle(.roundedBorder)
     }
     
     // MARK: Password Field
     private var passwordField: some View{
         SecureField("Enter Password", text: $password)
-        .textFieldStyle(.roundedBorder)
+            .textFieldStyle(.roundedBorder)
     }
     
     // MARK: Sign in Button
@@ -91,6 +95,7 @@ extension SignInView{
     private var signinwithgoogle: some View{
         Button {
             // Sign in with Google action here
+            signInWithGoogle()
         } label: {
             Image("ios_light_sq_SI")
                 .resizable()
@@ -109,6 +114,14 @@ extension SignInView{
                 //Sign up action here
             }.font(.system(size: 15))
                 .foregroundStyle(.white)
+        }
+    }
+    
+    private func signInWithGoogle() {
+        vm.signInWithGoogle(presenting: Application_utility.rootViewController) { error in
+            DispatchQueue.main.async {
+                print(error?.localizedDescription ?? "error")
+            }
         }
     }
 }

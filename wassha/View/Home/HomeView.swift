@@ -1,5 +1,8 @@
 import SwiftUI
 import CoreLocation
+import FirebaseAuth
+import GoogleSignIn
+
 struct HomeView: View {
 //    @State var laundries : [LaundryShopModel] = [
 //        LaundryShopModel(id: 1, name: "Laundry Maid Cafe", image: "laundry_1_image", rating: 5, phone: 0642396256, distance: 1.8),
@@ -10,6 +13,7 @@ struct HomeView: View {
     @State var searchKeyword:String = ""
     @State var locationVM = LocationManagerViewModel()
     @State var isSearchng = false
+    @State var isSignOut = false
     
     var body: some View {
         NavigationStack{
@@ -19,7 +23,7 @@ struct HomeView: View {
                 
                 VStack(alignment: .center,spacing:10){
                     
-                    HStack(spacing:0){
+                    HStack(spacing:10){
                         Text("Hi Kittama...")
                             .font(.system(size:20))
                         Spacer()
@@ -29,6 +33,27 @@ struct HomeView: View {
                             Image(systemName:"bell.circle")
                                 .foregroundStyle(.black)
                                 .font(.system(size:25))
+                        }
+                        Button{
+                            isSignOut = true
+                        } label: {
+                            Image(systemName:"rectangle.portrait.and.arrow.forward")
+                                .foregroundStyle(.black)
+                                .font(.system(size:25))
+                        }
+                        .alert("Are you sure you want to sign out?" ,isPresented: $isSignOut){
+                            Button("OK"){
+                                let firebaseAuth = Auth.auth()
+                                do{
+                                    try firebaseAuth.signOut()
+                                    UserDefaults.standard.set(false, forKey: "isSignIn")
+                                } catch let signOutError as NSError{
+                                    print("Error signing out: %@", signOutError)
+                                }
+                            }
+                            Button("Cancel", role: .cancel){
+                                //Cancel Button
+                            }
                         }
                     }
                     
