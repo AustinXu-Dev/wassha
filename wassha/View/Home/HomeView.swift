@@ -24,7 +24,7 @@ struct HomeView: View {
                 VStack(alignment: .center,spacing:10){
                     
                     HStack(spacing:10){
-                        Text("Hi Kittama...")
+                        Text("Hi \(Auth.auth().currentUser?.displayName ?? "No Username Found")...")
                             .font(.system(size:20))
                         Spacer()
                         Button{
