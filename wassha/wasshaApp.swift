@@ -9,9 +9,9 @@ import SwiftUI
 import FirebaseCore
 
 @main
-struct wasshaApp: App {
-    
+struct wasshaApp: App {    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     @StateObject private var locationVM = LocationViewModel()
 
     var body: some Scene {
