@@ -14,6 +14,9 @@ struct AllClothesCategoryView: View {
         
         
         ]
+    
+    @ObservedObject var clothesviewModel: ClothesSelectionViewModel = ClothesSelectionViewModel()
+
     var body: some View {
         
         
@@ -36,7 +39,7 @@ struct AllClothesCategoryView: View {
                         .shadow(color:.gray,radius:5)
                         .overlay(
                             
-                            ClothesCategoryView(clothesTypes: $clothesTypes)
+                            ClothesCategoryView(clothesTypes: $clothesTypes, clothesviewModel: clothesviewModel)
                             
                         )
                     
@@ -47,7 +50,7 @@ struct AllClothesCategoryView: View {
                 VStack(alignment:.center){
                     Button(action: {}, label: {
                         NavigationLink {
-                            // Go to Recipt Here
+                            OrderOverviewView(clothesviewModel: clothesviewModel)
                         } label: {
                             
                             RoundedRectangle(cornerRadius: 12)
