@@ -10,10 +10,13 @@ struct OrderOverviewView: View {
     @State var startDate: Date = Date()
     @State var startTime: Date = Date()
     @State var endTime: Date = Date()
-    @State var arrayOfArrays: [[String: [String: Int]]] = [
-        ["Cotton items": ["dress": 0, "shirt": 0]],
-        ["Woollen items": ["trousers": 0, "dress": 0]]
-    ]
+//    @State var arrayOfArrays: [[[String: [String: Int]]]] = [
+//        ["Cotton items": ["dress": 0, "shirt": 0]],
+//        ["Woollen items": ["trousers": 0, "dress": 0]]
+//    ]
+    
+    
+    @ObservedObject var clothesviewModel: ClothesSelectionViewModel
     
     var limitRange: ClosedRange<Date>{
         let oneMonthAgo = Calendar.current.date(byAdding: .month, value: -1, to: Date())
@@ -23,16 +26,18 @@ struct OrderOverviewView: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
-                Color.blue.opacity(0.8).edgesIgnoringSafeArea(.all)
-                VStack {
-                        ForEach(arrayOfArrays.indices, id: \.self) { outerIndex in
-                            ForEach(arrayOfArrays[outerIndex].sorted(by: { $0.key < $1.key }), id: \.key) { innerDictKey, innerDictValue in
+            ScrollView(.vertical,showsIndicators:false){
+                ZStack {
+                    Color.blue.opacity(0.8).edgesIgnoringSafeArea(.all)
+                    VStack {
+                        
+                        ForEach(clothesviewModel.selectedClothes.indices, id: \.self) { outerIndex in
+                            ForEach(clothesviewModel.selectedClothes[outerIndex].sorted(by: { $0.key < $1.key }), id: \.key) { innerDictKey, innerDictValue in
                                 VStack(alignment: .leading) {
                                     Text("\(innerDictKey)")
                                         .foregroundColor(.primary)
                                         .padding(.leading, 20)
-                                        
+                                    
                                     
                                     ForEach(innerDictValue.sorted(by: { $0.key < $1.key }), id: \.key) { key, value in
                                         HStack {
@@ -50,7 +55,7 @@ struct OrderOverviewView: View {
                                                             RoundedRectangle(cornerRadius: 10)
                                                                 .stroke(Color.black, lineWidth: 1)
                                                         )
-                
+                                                    
                                                     Text("\(key)")
                                                         .foregroundColor(.black)
                                                         .font(.caption2)
@@ -64,24 +69,26 @@ struct OrderOverviewView: View {
                                             CustomStepper(value: self.binding(for: key, in: innerDictKey, outerIndex: outerIndex))
                                         }
                                         .padding(10)
-                                             .background(Color.white)
-                                             .cornerRadius(10)
-                                             .padding([.leading, .trailing], 20)
+                                        .background(Color.white)
+                                        .cornerRadius(10)
+                                        .padding([.leading, .trailing], 20)
                                     }
-
+                                    
                                 }
                             }
                         }
-                    
+                        
+                        
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color("text_color_grey"))
                             .fill(.white)
+                            .frame(width:360,height:60)
                             .overlay {
                                 DatePicker("Select Date&Time", selection: $startDate, in: Date()..., displayedComponents: .date)
                                     .padding()
                                     .foregroundColor(.black)
-                            }.padding([.leading, .trailing, .top, .bottom], 20)
-    
+                            }
+                        
                         HStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color("text_color_grey"))
@@ -92,7 +99,7 @@ struct OrderOverviewView: View {
                                         .foregroundColor(.black)
                                 }
                                 .frame(width: 175, height: 50)
-    
+                            
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color("text_color_grey"))
                                 .fill(.white)
@@ -102,11 +109,11 @@ struct OrderOverviewView: View {
                                         .foregroundColor(.black)
                                 }
                                 .frame(width: 175, height: 50)
-    
-    
+                            
+                            
                         }
-
-                        NavigationLink(destination: RecepitView(arrayOfArrays: arrayOfArrays, startDate: startDate, startTime: startTime, endTime: endTime)) {
+                        
+                        NavigationLink(destination: RecepitView(arrayOfArrays: self.clothesviewModel.selectedClothes, startDate: startDate, startTime: startTime, endTime: endTime)) {
                             Text("Show Detail")
                                 .frame(maxWidth: .infinity)
                                 .padding()
@@ -115,7 +122,8 @@ struct OrderOverviewView: View {
                                 .cornerRadius(10)
                         }
                         .padding()
-
+                        
+                    }
                 }
             }
         }
@@ -124,10 +132,10 @@ struct OrderOverviewView: View {
     private func binding(for key: String, in outerKey: String, outerIndex: Int) -> Binding<Int> {
           return Binding<Int>(
               get: {
-                  self.arrayOfArrays[outerIndex][outerKey]?[key] ?? 0
+                  self.clothesviewModel.selectedClothes[outerIndex][outerKey]?[key] ?? 1
               },
               set: { newValue in
-                  self.arrayOfArrays[outerIndex][outerKey]?[key] = newValue
+                  self.clothesviewModel.selectedClothes[outerIndex][outerKey]?[key] = newValue
               }
           )
       }
@@ -151,7 +159,7 @@ struct CustomStepper: View {
             }
             .padding(.trailing)
 
-            Text("\(value)")
+            Text("\(value == 0 ? 1: value)")
                 .font(.headline)
                 .foregroundColor(.black)
 

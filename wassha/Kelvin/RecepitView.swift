@@ -10,7 +10,7 @@ struct RecepitView: View {
         ZStack {
             Color.blue.opacity(0.8).edgesIgnoringSafeArea(.all)
 
-            ScrollView {
+            ScrollView(.vertical,showsIndicators:false) {
 
                 VStack {
                     VStack(alignment: .leading, spacing: 10) {
@@ -41,7 +41,7 @@ struct RecepitView: View {
                                             
                                             Spacer()
                                             
-                                            Text("\(value)")
+                                            Text("\(value == 0 ? 1 : value)")
                                         }
                                     }
                                 }
@@ -126,62 +126,6 @@ struct RecepitView: View {
                         .background(Color.white.opacity(1))
                         .cornerRadius(10)
                         .padding([.top, .leading, .trailing],20)
-                                    
-                    VStack {
-                        Text("Delivery Detail")
-                            .bold()
-                            .foregroundColor(.white)
-                        RoundedRectangle(cornerRadius: 10)
-                            .frame(height: 70)
-                            .foregroundColor(.white)
-                            .overlay(
-                                HStack {
-                                    VStack {
-                                        Image("customer")
-                                        Text("Dcondo")
-                                            .font(.caption)
-                                            .bold()
-                                            .foregroundColor(.blue)
-                                    }
-                                    .padding()
-                                    
-                                    Spacer()
-                                    
-                                    Image(systemName: "arrow.right")
-                                        .foregroundColor(.blue)
-                                    Spacer()
-                                    
-                                    VStack {
-                                        Image("machine")
-                                        Text("Machine")
-                                            .font(.caption)
-                                            .bold()
-                                            .foregroundColor(.blue)
-
-                                    }
-                                    .padding()
-                                    
-                                    Spacer()
-                                    
-                                    Image(systemName: "arrow.right")
-                                        .foregroundColor(.blue)
-                                    Spacer()
-                                    
-                                    VStack {
-                                        Image("shirt 1")
-                                        Text("Dcondo")
-                                            .font(.caption)
-                                            .bold()
-                                            .foregroundColor(.blue)
-                                    }
-                                    .padding()
-                                }
-                                .foregroundColor(.white)
-                            )
-                    }
-                        .padding([.leading, .trailing],20)
-                    
-                    Spacer()
                     
                     AddressView()
                     

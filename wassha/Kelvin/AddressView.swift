@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct AddressView: View {
-    @State private var address = "Dcondo"
+    @State private var address = ""
     @State private var isEditing = false
     @State private var editedAddress = ""
     @State private var scrollProxy: ScrollViewProxy? = nil
@@ -9,6 +9,62 @@ struct AddressView: View {
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView {
+                VStack {
+                    Text("Delivery Detail")
+                        .bold()
+                        .foregroundColor(.white)
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame(height: 70)
+                        .foregroundColor(.white)
+                        .overlay(
+                            HStack {
+                                VStack {
+                                    Image("customer")
+                                    Text(self.editedAddress)
+                                        .font(.caption)
+                                        .bold()
+                                        .foregroundColor(.blue)
+                                }
+                                .padding()
+                                
+                                Spacer()
+                                
+                                Image(systemName: "arrow.right")
+                                    .foregroundColor(.blue)
+                                Spacer()
+                                
+                                VStack {
+                                    Image("machine")
+                                    Text("Machine")
+                                        .font(.caption)
+                                        .bold()
+                                        .foregroundColor(.blue)
+
+                                }
+                                .padding()
+                                
+                                Spacer()
+                                
+                                Image(systemName: "arrow.right")
+                                    .foregroundColor(.blue)
+                                Spacer()
+                                
+                                VStack {
+                                    Image("shirt 1")
+                                    Text(self.editedAddress)
+                                        .font(.caption)
+                                        .bold()
+                                        .foregroundColor(.blue)
+                                }
+                                .padding()
+                            }
+                            .foregroundColor(.white)
+                        )
+                }
+                .padding([.leading, .trailing],20)
+                
+                Spacer()
+                
                 VStack {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.white.opacity(0.2))
