@@ -18,9 +18,6 @@ struct AllClothesCategoryView: View {
     @ObservedObject var clothesviewModel: ClothesSelectionViewModel = ClothesSelectionViewModel()
 
     var body: some View {
-        
-        
-        
         VStack{
             ScrollView(.vertical,showsIndicators:false){
                 LaundryDetailView(laundryShop: $laundryShop)

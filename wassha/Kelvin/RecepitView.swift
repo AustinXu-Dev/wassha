@@ -7,11 +7,9 @@ struct RecepitView: View {
     @State private var name = ""
     
     var body: some View {
-        ZStack {
-            Color.blue.opacity(0.8).edgesIgnoringSafeArea(.all)
-
+        VStack{
             ScrollView(.vertical,showsIndicators:false) {
-
+                
                 VStack {
                     VStack(alignment: .leading, spacing: 10) {
                         RoundedRectangle(cornerRadius: 10)
@@ -29,7 +27,7 @@ struct RecepitView: View {
                                         .foregroundColor(.white)
                                         .bold()
                                 }
-                                .padding()
+                                    .padding()
                             )
                         
                         ForEach(arrayOfArrays.indices, id: \.self) { outerIndex in
@@ -88,7 +86,7 @@ struct RecepitView: View {
                             VStack (alignment: .leading) {
                                 Text("Distance")
                                     .foregroundColor(.blue)
-
+                                
                                 Text("Dcondo ABAC")
                             }
                             
@@ -97,7 +95,7 @@ struct RecepitView: View {
                             VStack {
                                 Text("Kg")
                                     .foregroundColor(.blue)
-
+                                
                                 Text("1.8 * 2")
                             }
                             
@@ -106,7 +104,7 @@ struct RecepitView: View {
                             VStack {
                                 Text("Price")
                                     .foregroundColor(.blue)
-
+                                
                                 Text("50B")
                             }
                         }
@@ -122,28 +120,28 @@ struct RecepitView: View {
                         .background(Color.blue)
                         .cornerRadius(10)
                     }
-                        .padding(20)
-                        .background(Color.white.opacity(1))
-                        .cornerRadius(10)
-                        .padding([.top, .leading, .trailing],20)
+                    .padding(20)
+                    .background(Color.white.opacity(1))
+                    .cornerRadius(10)
+                    .padding([.top, .leading, .trailing],20)
                     
                     AddressView()
                     
                     Spacer()
                     
                     Button(action: {
-                       showingAlert.toggle()
-                   }) {
-                       Label("Special Note", systemImage: "ellipsis.message")
-                           .frame(maxWidth: .infinity)
-                           .padding()
-                           .foregroundColor(.white)
-                           .background(Color.blue)
-                           .cornerRadius(10)
-                   }
-                   .padding([.leading, .trailing])
-                    .alert("Enter your name", isPresented: $showingAlert) {
-                        TextField("Enter your name", text: $name)
+                        showingAlert.toggle()
+                    }) {
+                        Label("Special Note", systemImage: "ellipsis.message")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+                    .padding([.leading, .trailing])
+                    .alert("Enter your note here", isPresented: $showingAlert) {
+                        TextField("Enter your note", text: $name)
                         Button("Save", action: submit)
                         Button("Cancel") {
                             showingAlert = false
@@ -163,10 +161,12 @@ struct RecepitView: View {
                     .padding()
                 }
             }
-        }
+        }.background(Color.wasshaBackgroundColor)
+
     }
     
     func submit() {
         print("You entered \(name)")
     }
 }
+

@@ -20,7 +20,7 @@ struct SplashView: View {
                 if hasSeenOnboardingView{
 //                    SignInView()
                     if isSignIn{
-                        HomeView()
+                        BaseTabView()
                     } else {
                         SignInView()
                     }

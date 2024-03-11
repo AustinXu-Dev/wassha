@@ -8,12 +8,6 @@ struct ServiceCategoryView: View {
     
     
     //    let horizontalRows = [ GridItem(.adaptive(minimum: 80))]
-    
-    
-    
-    
-    
-    
     var body: some View {
         LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 0){
             ForEach(serviceTypes,id:\.id){ service in

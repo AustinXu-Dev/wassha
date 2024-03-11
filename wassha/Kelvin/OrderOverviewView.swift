@@ -25,11 +25,9 @@ struct OrderOverviewView: View {
     }
     
     var body: some View {
-        NavigationView {
+        VStack{
             ScrollView(.vertical,showsIndicators:false){
-                ZStack {
-                    Color.blue.opacity(0.8).edgesIgnoringSafeArea(.all)
-                    VStack {
+                VStack {
                         
                         ForEach(clothesviewModel.selectedClothes.indices, id: \.self) { outerIndex in
                             ForEach(clothesviewModel.selectedClothes[outerIndex].sorted(by: { $0.key < $1.key }), id: \.key) { innerDictKey, innerDictValue in
@@ -124,9 +122,10 @@ struct OrderOverviewView: View {
                         .padding()
                         
                     }
-                }
             }
-        }
+        }.background(Color.wasshaBackgroundColor)
+            .navigationTitle("WASSHA")
+            .navigationBarTitleDisplayMode(.inline)
     }
 
     private func binding(for key: String, in outerKey: String, outerIndex: Int) -> Binding<Int> {
@@ -176,4 +175,5 @@ struct CustomStepper: View {
         }
     }
 }
+
 
