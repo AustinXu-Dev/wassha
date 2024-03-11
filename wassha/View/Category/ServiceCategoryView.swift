@@ -7,9 +7,13 @@ struct ServiceCategoryView: View {
     
     
     
+    //set the LazyVGrid columns as this array if you want 3x2 view
+    //[GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    
+    
     //    let horizontalRows = [ GridItem(.adaptive(minimum: 80))]
     var body: some View {
-        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 0){
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 170, maximum: 135))], spacing: 0){
             ForEach(serviceTypes,id:\.id){ service in
                 VStack(alignment:.center,spacing:5){
                     Image(service.serviceTypeImage)
@@ -55,10 +59,10 @@ struct ServiceCategoryView: View {
         
         ServiceType(serviceType: "Wash", serviceTypeImage: "Wash", isSelected: false),
         ServiceType(serviceType: "Dry Clean", serviceTypeImage: "Dry Clean", isSelected: false),
-        ServiceType(serviceType: "Wash & Iron", serviceTypeImage: "Wash & Iron", isSelected: false),
-        ServiceType(serviceType: "Iron", serviceTypeImage: "Iron", isSelected: false),
-        ServiceType(serviceType: "Polish", serviceTypeImage: "Polish", isSelected: false),
-        ServiceType(serviceType: "Pre-Wash", serviceTypeImage: "Pre-Wash", isSelected: false)
+//        ServiceType(serviceType: "Wash & Iron", serviceTypeImage: "Wash & Iron", isSelected: false),
+//        ServiceType(serviceType: "Iron", serviceTypeImage: "Iron", isSelected: false),
+//        ServiceType(serviceType: "Polish", serviceTypeImage: "Polish", isSelected: false),
+//        ServiceType(serviceType: "Pre-Wash", serviceTypeImage: "Pre-Wash", isSelected: false)
         ]
         
         ))

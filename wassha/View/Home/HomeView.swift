@@ -26,6 +26,7 @@ struct HomeView: View {
                     HStack(spacing:10){
                         Text("Hi \(Auth.auth().currentUser?.displayName ?? "No Username Found")...")
                             .font(.system(size:20))
+                            .lineLimit(1)
                         Spacer()
                         Button{
                             
@@ -69,6 +70,7 @@ struct HomeView: View {
                                     
                                 Text(locationVM.userAddress ?? "Location Unavailable")
                                     .foregroundStyle(.black)
+                                    .lineLimit(1)
                 
                             }
                         }
