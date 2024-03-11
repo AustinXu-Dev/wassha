@@ -6,11 +6,11 @@ struct AllClothesCategoryView: View {
     @State var clothesTypes:[ClothesType] = [
         
         ClothesType(clothesType: "Cotton", clothesTypeImage: "Cotton", isSelected: false),
-        ClothesType(clothesType: "Lenin", clothesTypeImage: "Lenin", isSelected: false),
-        ClothesType(clothesType: "Silk", clothesTypeImage: "Silk", isSelected: false),
-        ClothesType(clothesType: "Denim", clothesTypeImage: "Denim", isSelected: false),
-        ClothesType(clothesType: "Polyester", clothesTypeImage: "Polyester", isSelected: false),
-        ClothesType(clothesType: "Woollen", clothesTypeImage: "Woollen", isSelected: false),
+//        ClothesType(clothesType: "Lenin", clothesTypeImage: "Lenin", isSelected: false),
+//        ClothesType(clothesType: "Silk", clothesTypeImage: "Silk", isSelected: false),
+//        ClothesType(clothesType: "Denim", clothesTypeImage: "Denim", isSelected: false),
+//        ClothesType(clothesType: "Polyester", clothesTypeImage: "Polyester", isSelected: false),
+        ClothesType(clothesType: "Woollen", clothesTypeImage: "Woollen", isSelected: false)
         
         
         ]

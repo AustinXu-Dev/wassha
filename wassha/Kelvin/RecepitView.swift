@@ -5,7 +5,7 @@ struct RecepitView: View {
     var startDate, startTime, endTime : Date
     @State private var showingAlert = false
     @State private var name = ""
-    
+    let locationManagerVM = LocationManagerViewModel()
     var body: some View {
         VStack{
             ScrollView(.vertical,showsIndicators:false) {
@@ -117,7 +117,7 @@ struct RecepitView: View {
                                 .foregroundColor(.white)
                         }
                         .padding(5)
-                        .background(Color.blue)
+                        .background(Color.blue.opacity(0.65))
                         .cornerRadius(10)
                     }
                     .padding(20)
@@ -126,6 +126,38 @@ struct RecepitView: View {
                     .padding([.top, .leading, .trailing],20)
                     
                     AddressView()
+                    
+                    
+                    RoundedRectangle(cornerRadius: 6)
+                         .foregroundStyle(.white)
+                         .frame(width:360,height:40)
+                         .shadow(color:.gray,radius:2)
+                         .overlay(
+                             HStack{
+                                 Text("Your Current Location")
+                                     .foregroundStyle(.black)
+                                     .font(.system(size:20))
+                                 Spacer()
+                                 Button {
+                                     locationManagerVM.requestLocation()
+                                 } label: {
+                                     Image(systemName:"location.north.circle.fill")
+                                         .resizable()
+                                         .aspectRatio(contentMode: .fit)
+                                         .frame(width:25,height:25)
+                                         .foregroundStyle(.black)
+
+                                 }
+                                 
+                             }
+                                 .padding()
+                         
+                         )
+
+                    
+                    
+                    
+                    
                     
                     Spacer()
                     
@@ -136,7 +168,7 @@ struct RecepitView: View {
                             .frame(maxWidth: .infinity)
                             .padding()
                             .foregroundColor(.white)
-                            .background(Color.blue)
+                            .background(Color.blue.opacity(0.65))
                             .cornerRadius(10)
                     }
                     .padding([.leading, .trailing])
@@ -154,9 +186,10 @@ struct RecepitView: View {
                         Text("Pay now")
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.white)
-                            .foregroundColor(.blue)
+                            .background(Color.blue.opacity(0.65))
+                            .foregroundColor(.white)
                             .cornerRadius(10)
+                        
                     }
                     .padding()
                 }

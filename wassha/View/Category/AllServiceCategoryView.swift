@@ -5,11 +5,11 @@ struct AllServiceCategoryView: View {
     @State var serviceTypes:[ServiceType] = [
         
         ServiceType(serviceType: "Wash", serviceTypeImage: "Wash", isSelected: false),
-        ServiceType(serviceType: "Dry Clean", serviceTypeImage: "Dry Clean", isSelected: false),
-        ServiceType(serviceType: "Wash & Iron", serviceTypeImage: "Wash & Iron", isSelected: false),
-        ServiceType(serviceType: "Iron", serviceTypeImage: "Iron", isSelected: false),
-        ServiceType(serviceType: "Polish", serviceTypeImage: "Polish", isSelected: false),
-        ServiceType(serviceType: "Pre-Wash", serviceTypeImage: "Pre-Wash", isSelected: false)
+        ServiceType(serviceType: "Dry Clean", serviceTypeImage: "Dry Clean", isSelected: false)
+//        ServiceType(serviceType: "Wash & Iron", serviceTypeImage: "Wash & Iron", isSelected: false),
+//        ServiceType(serviceType: "Iron", serviceTypeImage: "Iron", isSelected: false),
+//        ServiceType(serviceType: "Polish", serviceTypeImage: "Polish", isSelected: false),
+//        ServiceType(serviceType: "Pre-Wash", serviceTypeImage: "Pre-Wash", isSelected: false)
         ]
     
     

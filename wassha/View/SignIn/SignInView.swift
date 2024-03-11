@@ -33,16 +33,16 @@ struct SignInView: View {
                         .foregroundStyle(.white)
                     
                     emailField
-                    .padding(.horizontal, 30)
-                    .padding(.vertical)
+                        .padding(.horizontal, 30)
+                        .padding(.vertical)
                     
                     passwordField
-                    .padding(.horizontal, 30)
-                    .padding(.vertical, 20)
+                        .padding(.horizontal, 30)
+                        .padding(.vertical, 20)
                     
                     signinbutton
                         .padding(.vertical, 30)
-                       
+                    
                     Divider()
                         .frame(width: 300,height: 5)
                         .overlay(.white)
@@ -58,7 +58,7 @@ struct SignInView: View {
                     
                 }.frame(maxWidth: .infinity, maxHeight: 750)
                 
-                .navigationBarBackButtonHidden()
+                    .navigationBarBackButtonHidden()
             }
         }
     }
@@ -97,35 +97,56 @@ extension SignInView{
             // Sign in with Google action here
             signInWithGoogle()
         } label: {
-            Image("ios_light_sq_SI")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 250)
-            
-        }
-    }
-    
-    // MARK: Sign up Button
-    private var signupbutton: some View{
-        HStack{
-            Text("Didn't have account?")
-                .font(.system(size: 15))
-            Button("Sign up") {
-                //Sign up action here
-            }.font(.system(size: 15))
+            RoundedRectangle(cornerRadius: 7)
                 .foregroundStyle(.white)
-        }
-    }
-    
-    private func signInWithGoogle() {
-        vm.signInWithGoogle(presenting: Application_utility.rootViewController) { error in
-            DispatchQueue.main.async {
-                print(error?.localizedDescription ?? "error")
-            }
-        }
-    }
-}
-
-#Preview {
-    SignInView()
-}
+                .frame(width:250,height:60)
+                .shadow(color:.gray,radius:2)
+                .overlay(
+                    HStack(alignment:.center){
+                        
+                        
+                        Image("google_logo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width:40,height:40)
+                        
+                        
+                        Text("Sign in with Google")
+                            .font(.system(size:15))
+                            .bold()
+                        
+                        
+                    }
+                    )
+                        .padding()
+                    
+                    
+                    
+                    
+                    }
+                    }
+                    
+                    // MARK: Sign up Button
+                    private var signupbutton: some View{
+                        HStack{
+                            Text("Didn't have account?")
+                                .font(.system(size: 15))
+                            Button("Sign up") {
+                                //Sign up action here
+                            }.font(.system(size: 15))
+                                .foregroundStyle(.white)
+                        }
+                    }
+                    
+                    private func signInWithGoogle() {
+                        vm.signInWithGoogle(presenting: Application_utility.rootViewController) { error in
+                            DispatchQueue.main.async {
+                                print(error?.localizedDescription ?? "error")
+                            }
+                        }
+                    }
+                    }
+                    
+                    #Preview {
+                        SignInView()
+                    }

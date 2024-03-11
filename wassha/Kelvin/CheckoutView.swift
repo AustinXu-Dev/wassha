@@ -148,7 +148,7 @@ struct CheckoutView: View {
                     .padding()
                     .frame(maxWidth: 400, maxHeight: 80)
 //                        .background(Color.blue)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.blue.opacity(0.65))
                     .overlay {
                         Text("Pay Now")
                             .foregroundStyle(.white)

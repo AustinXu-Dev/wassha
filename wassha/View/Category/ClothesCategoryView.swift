@@ -5,7 +5,7 @@ struct ClothesCategoryView: View {
     //    let horizontalRows = [ GridItem(.adaptive(minimum: 80))]
         @ObservedObject var clothesviewModel: ClothesSelectionViewModel 
     var body: some View {
-        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 0){
+        LazyVGrid(columns:  [GridItem(.adaptive(minimum: 170, maximum: 135))], spacing: 0){
             ForEach(clothesTypes,id:\.id){ clothes in
                 VStack(alignment:.center,spacing:5){
                     Image(clothes.clothesTypeImage)
