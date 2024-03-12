@@ -12,7 +12,7 @@ struct AllServiceCategoryView: View {
 //        ServiceType(serviceType: "Pre-Wash", serviceTypeImage: "Pre-Wash", isSelected: false)
         ]
     
-    
+    @ObservedObject var shared = ServiceSelectionViewModel.shared
     
   
     var body: some View {

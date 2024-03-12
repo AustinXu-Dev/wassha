@@ -6,6 +6,7 @@ struct AddressView: View {
     @State private var editedAddress = ""
     @State private var scrollProxy: ScrollViewProxy? = nil
 
+
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView {
@@ -20,11 +21,12 @@ struct AddressView: View {
                             HStack {
                                 VStack {
                                     Image("customer")
-                                    Text(self.editedAddress)
-                                        .font(.caption)
-                                        .bold()
-                                        .foregroundColor(.blue)
-                                }
+                                        Text(self.editedAddress)
+                                            .font(.caption)
+                                            .bold()
+                                            .foregroundColor(.blue)
+                                  
+                                } // end of VStack
                                 .padding()
                                 
                                 Spacer()
