@@ -5,7 +5,8 @@ struct RecepitView: View {
     var startDate, startTime, endTime : Date
     @State private var showingAlert = false
     @State private var name = ""
-    let locationManagerVM = LocationManagerViewModel()
+    @ObservedObject var shared = ServiceSelectionViewModel.shared
+    
     var body: some View {
         VStack{
             ScrollView(.vertical,showsIndicators:false) {
@@ -69,7 +70,12 @@ struct RecepitView: View {
                             VStack (alignment: .leading) {
                                 Text("Service")
                                     .foregroundColor(.blue)
-                                Text("Wash + Dry Clean")
+//                                     made the service dynamic
+                                ForEach(shared.selectedServices,id:\.self){service in
+                                        Text(service)
+                                    
+                                }
+
                             }
                             Spacer()
                             
@@ -128,31 +134,34 @@ struct RecepitView: View {
                     AddressView()
                     
                     
-                    RoundedRectangle(cornerRadius: 6)
-                         .foregroundStyle(.white)
-                         .frame(width:360,height:40)
-                         .shadow(color:.gray,radius:2)
-                         .overlay(
-                             HStack{
-                                 Text("Your Current Location")
-                                     .foregroundStyle(.black)
-                                     .font(.system(size:20))
-                                 Spacer()
-                                 Button {
-                                     locationManagerVM.requestLocation()
-                                 } label: {
-                                     Image(systemName:"location.north.circle.fill")
-                                         .resizable()
-                                         .aspectRatio(contentMode: .fit)
-                                         .frame(width:25,height:25)
-                                         .foregroundStyle(.black)
-
-                                 }
-                                 
-                             }
-                                 .padding()
-                         
-                         )
+//                    RoundedRectangle(cornerRadius: 6)
+//                         .foregroundStyle(.white)
+//                         .frame(width:360,height:40)
+//                         .shadow(color:.gray,radius:2)
+//                         .overlay(
+//                             HStack{
+//                                 Text("Your Current Location")
+//                                     .foregroundStyle(.black)
+//                                     .font(.system(size:20))
+//                                 Spacer()
+//                                 Button {
+//                                     self.isRequestingLocation.toggle()
+//                                     if self.isRequestingLocation {
+//                                         self.locationVM.requestLocation()
+//                                     }
+//                                 } label: {
+//                                     Image(systemName:"location.north.circle.fill")
+//                                         .resizable()
+//                                         .aspectRatio(contentMode: .fit)
+//                                         .frame(width:25,height:25)
+//                                         .foregroundStyle(.black)
+//
+//                                 }
+//                                 
+//                             }
+//                                 .padding()
+//                         
+//                         )
 
                     
                     
