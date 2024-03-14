@@ -158,7 +158,7 @@ struct CustomStepper: View {
             }
             .padding(.trailing)
 
-            Text("\(value == 0 ? 1: value)")
+            Text("\(value)")
                 .font(.headline)
                 .foregroundColor(.black)
 

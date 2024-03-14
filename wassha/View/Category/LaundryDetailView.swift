@@ -21,11 +21,18 @@ struct LaundryDetailView: View {
                     .overlay(
                         VStack(alignment:.leading){
                             Text(laundryShop.name)
-                            
+                                .foregroundStyle(Color(#colorLiteral(red: 0.2745098039, green: 0.568627451, blue: 0.8274509804, alpha: 1)))
+                                .bold()
+
                             Text("Distance \(String(format:"%.1f",laundryShop.distance))km")
                             
                             
-                            Label("0\(String(laundryShop.phone))", systemImage: "phone")
+                            HStack {
+                                Image(systemName: "phone")
+                                    .foregroundColor(.wasshaTextColor)
+                                Text("0\(String(laundryShop.phone))")
+                            }
+
                         }
                             .offset(x:-30)
                     )
@@ -39,12 +46,17 @@ struct LaundryDetailView: View {
                 Spacer()
                 
                 VStack(alignment:.center){
-                    Label("\(String(laundryShop.rating))",
-                          systemImage: "star.fill"
-                    )
+                    HStack {
+                        Image("star_review")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width:25,height:25)
+                        Text("\(String(laundryShop.rating))")
+
+                    }
+
                     .padding(.horizontal,5)
                     .padding(.vertical,7)
-                    .foregroundColor(.black)
                     .imageScale(.small)
                     .symbolRenderingMode(.multicolor)
                     .tint(.blue)
@@ -55,8 +67,10 @@ struct LaundryDetailView: View {
                     .cornerRadius(10)
                     
                     
-                    Text("20 Ratings")
+                    Text("20 Reviews")
                         .font(.system(size:16))
+                        .foregroundStyle(Color.white)
+
                 }
                 
                 

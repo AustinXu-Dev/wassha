@@ -14,9 +14,9 @@ class ClothesSelectionViewModel: ObservableObject {
         selectedClothes = clothesTypes.reduce(into: []) { result, type in
             if type.isSelected {
                 if type.clothesType == "Cotton" {
-                    result.append(contentsOf: [[type.clothesType: ["dress": 0,"shirt": 0]]])
+                    result.append(contentsOf: [[type.clothesType: ["Dress": 0,"Shirt": 0]]])
                 } else {
-                    result.append(contentsOf: [[type.clothesType: ["trousers": 0,"dress": 0]]])
+                    result.append(contentsOf: [[type.clothesType: ["Trousers": 0,"Dress": 0]]])
                 }
             }
         }
