@@ -32,7 +32,7 @@ struct HomeView: View {
                             
                         } label: {
                             Image(systemName:"bell.circle")
-                                .foregroundStyle(.black)
+                                .foregroundStyle(.white)
                                 .font(.system(size:25))
                         }
                         Button{

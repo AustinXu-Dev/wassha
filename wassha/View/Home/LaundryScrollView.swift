@@ -23,14 +23,19 @@ struct LaundryScrollView: View {
                             .shadow(color:.gray,radius:5)
                             .overlay(
                                 VStack(alignment:.leading){
-                                    Label("\(String( laundry.rating))",
-                                          systemImage: "star.fill"
-                                    )
+                                    HStack {
+                                        Image("star_review")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width:25,height:25)
+                                        Text("\(String(laundry.rating))")
+                                            .foregroundColor(.black)
+
+                                    }
+
                                     
-                                    .foregroundColor(.black)
                                     .imageScale(.small)
                                     .symbolRenderingMode(.multicolor)
-                                    .tint(.yellow)
                                     .padding(.horizontal,5)
                                     .padding(.vertical,3.3)
                                     .background()
