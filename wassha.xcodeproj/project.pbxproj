@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390D80A32BA37EAB00C206F2 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D80A22BA37EAB00C206F2 /* LocationView.swift */; };
 		392A771A2B919B1D0013CCC2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A77192B919B1D0013CCC2 /* CameraView.swift */; };
 		394102DC2B8DC3B600410009 /* OrderOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394102DB2B8DC3B600410009 /* OrderOverviewView.swift */; };
 		394102DE2B8DD34B00410009 /* RecepitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394102DD2B8DD34B00410009 /* RecepitView.swift */; };
@@ -70,6 +71,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		390D80A22BA37EAB00C206F2 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		392A77192B919B1D0013CCC2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		394102DB2B8DC3B600410009 /* OrderOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderOverviewView.swift; sourceTree = "<group>"; };
 		394102DD2B8DD34B00410009 /* RecepitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepitView.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				392A77192B919B1D0013CCC2 /* CameraView.swift */,
 				396C857C2B9838AC0074C1C6 /* AddressView.swift */,
 				396C857E2B98B5440074C1C6 /* CheckoutView.swift */,
+				390D80A22BA37EAB00C206F2 /* LocationView.swift */,
 			);
 			path = Kelvin;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				394102DE2B8DD34B00410009 /* RecepitView.swift in Sources */,
 				B7B654472BA0154A00970AF9 /* ServiceSelectionViewModel.swift in Sources */,
 				BCFEEEC32B8B68EC0060DFB5 /* viewtest.swift in Sources */,
+				390D80A32BA37EAB00C206F2 /* LocationView.swift in Sources */,
 				396C857F2B98B5450074C1C6 /* CheckoutView.swift in Sources */,
 				392A771A2B919B1D0013CCC2 /* CameraView.swift in Sources */,
 				BCFEEEA42B8B67500060DFB5 /* ContentView.swift in Sources */,

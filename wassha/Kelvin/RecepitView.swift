@@ -40,7 +40,7 @@ struct RecepitView: View {
                                             
                                             Spacer()
                                             
-                                            Text("\(value == 0 ? 1 : value)")
+                                            Text("\(value)")
                                         }
                                     }
                                 }
@@ -131,42 +131,9 @@ struct RecepitView: View {
                     .cornerRadius(10)
                     .padding([.top, .leading, .trailing],20)
                     
-                    AddressView()
+//                    AddressView()
                     
-                    
-//                    RoundedRectangle(cornerRadius: 6)
-//                         .foregroundStyle(.white)
-//                         .frame(width:360,height:40)
-//                         .shadow(color:.gray,radius:2)
-//                         .overlay(
-//                             HStack{
-//                                 Text("Your Current Location")
-//                                     .foregroundStyle(.black)
-//                                     .font(.system(size:20))
-//                                 Spacer()
-//                                 Button {
-//                                     self.isRequestingLocation.toggle()
-//                                     if self.isRequestingLocation {
-//                                         self.locationVM.requestLocation()
-//                                     }
-//                                 } label: {
-//                                     Image(systemName:"location.north.circle.fill")
-//                                         .resizable()
-//                                         .aspectRatio(contentMode: .fit)
-//                                         .frame(width:25,height:25)
-//                                         .foregroundStyle(.black)
-//
-//                                 }
-//                                 
-//                             }
-//                                 .padding()
-//                         
-//                         )
-
-                    
-                    
-                    
-                    
+                    LocationView()
                     
                     Spacer()
                     
