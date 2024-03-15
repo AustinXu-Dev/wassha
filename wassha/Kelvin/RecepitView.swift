@@ -14,7 +14,8 @@ struct RecepitView: View {
     @State private var editedAddress = ""
     @State private var scrollProxy: ScrollViewProxy? = nil
     @State private var change = false
-    
+     var passedLaundryShopName: LaundryShopModel
+
     var body: some View {
         VStack{
             ScrollView(.vertical,showsIndicators:false) {
@@ -102,16 +103,20 @@ struct RecepitView: View {
                                     .foregroundColor(.blue)
                                 
                                 if !change {
-                                    Text(self.locationVM.userAddress ?? self.editedAddress)
-                                        .font(.system(size: 10))
-                                        .bold()
-                                        .foregroundColor(.blue)
-                                        .minimumScaleFactor(0.5)
+                                    Text("\(self.locationVM.userAddress ?? self.editedAddress) - \(passedLaundryShopName.name)")
+                                        .font(.system(size: 15))
+                                        .foregroundColor(.black)
+                                        .lineLimit(1)
+                                        .frame(maxWidth:85)
+
                                 } else {
-                                    Text(self.editedAddress)
-                                        .font(.system(size: 10))
-                                        .bold()
-                                        .foregroundColor(.blue)
+                                    Text("\(self.editedAddress) - \(passedLaundryShopName.name)")
+                                        .font(.system(size: 15))
+                                        .lineLimit(1)
+                                        .foregroundColor(.black)
+                                        .frame(maxWidth:85)
+
+
                                 }
                             }
                             
@@ -167,15 +172,13 @@ struct RecepitView: View {
                                                 Image("customer")
                                                 if !change {
                                                     Text(self.locationVM.userAddress ?? self.editedAddress)
-                                                        .font(.system(size: 10))
-                                                        .bold()
+                                                        .font(.system(size: 15))
                                                         .foregroundColor(.blue)
-                                                        .minimumScaleFactor(0.5)
                                                 } else {
                                                     Text(self.editedAddress)
-                                                        .font(.system(size: 10))
-                                                        .bold()
+                                                        .font(.system(size: 15))
                                                         .foregroundColor(.blue)
+
                                                 }
                                               
                                             } // end of VStack
@@ -189,9 +192,8 @@ struct RecepitView: View {
                                             
                                             VStack {
                                                 Image("machine")
-                                                Text("Machine")
-                                                    .font(.caption)
-                                                    .bold()
+                                                Text(passedLaundryShopName.name)
+                                                    .font(.system(size: 15))
                                                     .foregroundColor(.blue)
 
                                             }
@@ -207,14 +209,11 @@ struct RecepitView: View {
                                                 Image("shirt 1")
                                                 if !change {
                                                     Text(self.locationVM.userAddress ?? self.editedAddress)
-                                                        .font(.system(size: 10))
-                                                        .bold()
+                                                        .font(.system(size: 15))
                                                         .foregroundColor(.blue)
-                                                        .minimumScaleFactor(0.5)
                                                 } else {
                                                     Text(self.editedAddress)
-                                                        .font(.system(size: 10))
-                                                        .bold()
+                                                        .font(.system(size: 15))
                                                         .foregroundColor(.blue)
                                                 }
                                             }

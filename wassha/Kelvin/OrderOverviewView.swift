@@ -5,7 +5,7 @@ struct orderDetail {
 }
 
 struct OrderOverviewView: View {
-    
+     var laundryShopName: LaundryShopModel
     @State var viewModel = orderDetail()
     @State var startDate: Date = Date()
     @State var startTime: Date = Date()
@@ -111,7 +111,7 @@ struct OrderOverviewView: View {
                             
                         }
                         
-                        NavigationLink(destination: RecepitView(arrayOfArrays: self.clothesviewModel.selectedClothes, startDate: startDate, startTime: startTime, endTime: endTime)) {
+                        NavigationLink(destination: RecepitView(arrayOfArrays: self.clothesviewModel.selectedClothes, startDate: startDate, startTime: startTime, endTime: endTime, passedLaundryShopName: laundryShopName)) {
                             Text("Show Detail")
                                 .frame(maxWidth: .infinity)
                                 .padding()

@@ -47,7 +47,7 @@ struct AllClothesCategoryView: View {
                 VStack(alignment:.center){
                     Button(action: {}, label: {
                         NavigationLink {
-                            OrderOverviewView(clothesviewModel: clothesviewModel)
+                            OrderOverviewView(laundryShopName: laundryShop, clothesviewModel: clothesviewModel)
                         } label: {
                             
                             RoundedRectangle(cornerRadius: 12)
