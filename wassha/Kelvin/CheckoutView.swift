@@ -53,9 +53,9 @@ import SwiftUI
 
 struct CheckoutView: View {
     
-    
-    @Binding var editedAddress : String
-    @Binding var locationVM : LocationManagerViewModel
+//    
+//    @Binding var editedAddress : String
+//    @Binding var locationVM : LocationManagerViewModel
     
     
     
@@ -83,29 +83,72 @@ struct CheckoutView: View {
 
                             Spacer()
 
-                            Image(systemName: "arrow.right")
-                                .foregroundColor(.blue)
-                            Spacer()
-
-                            VStack {
-                                Image("shirt 1")
-//                                Text(self.locationVM.userAddress ?? self.editedAddress)
-                               
-                                    if self.editedAddress != "" {
-                                        Text(self.editedAddress)
-                                            .font(.caption)
-                                            .bold()
-                                            .foregroundColor(.blue)
-                                    } else {
-                                        Text(locationVM.userAddress ?? "Location Not Found")
-                                            .font(.caption)
-                                            .bold()
-                                            .foregroundColor(.blue)
-                                    }
+                            
+                            Divider()
+                            
+                            VStack(alignment:.center,spacing:20){
                                 
-                                   
+                                
+                                Text("150 Baht")
+                                    .fontWeight(.heavy)
+                                    .foregroundStyle(.white)
+                                    .font(.system(size:23))
+                                    .offset(y:10)
+                                
+                                
+                                Button(action: {}, label: {
+                                  
+                                        RoundedRectangle(cornerRadius: 17)
+                                            .stroke(lineWidth:2)
+                                            .foregroundStyle(Color.white)
+                                            .frame(width:120,height:40)
+                                            .background(Color.wasshaTextColor)
+                                            .cornerRadius(17)
+                                            .shadow(color:.gray,radius:2)
+                                            .overlay (
+                                         HStack{
+                                        Image("e-wallet 2")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width:35,height:35)
+                                        Text("Top Up")
+                                            .bold()
+                                            .foregroundStyle(.white)
+                                        
+                                    }
+                                        
+                                   )
+                                           
+                                })
+                                
+                                
                             }
-                            .padding()
+                            .offset(x:-30)
+                            
+                            
+//                            Image(systemName: "arrow.right")
+//                                .foregroundColor(.blue)
+//                            Spacer()
+
+//                            VStack {
+//                                Image("shirt 1")
+////                                Text(self.locationVM.userAddress ?? self.editedAddress)
+//                               
+//                                    if self.editedAddress != "" {
+//                                        Text(self.editedAddress)
+//                                            .font(.caption)
+//                                            .bold()
+//                                            .foregroundColor(.blue)
+//                                    } else {
+//                                        Text(locationVM.userAddress ?? "Location Not Found")
+//                                            .font(.caption)
+//                                            .bold()
+//                                            .foregroundColor(.blue)
+//                                    }
+//                                
+//                                   
+//                            }
+                           
                         }
                         .foregroundColor(.white)
                     )
@@ -206,9 +249,9 @@ struct PaymentOptionButton: View {
         }
     }
 }
-//
-//#Preview {
-//    NavigationStack{
-//        CheckoutView()
-//    }
-//}
+
+#Preview {
+    NavigationStack{
+        CheckoutView()
+    }
+}

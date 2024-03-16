@@ -324,7 +324,7 @@ struct RecepitView: View {
                         Text("You can add your note here!")
                     }
                     
-                    NavigationLink(destination: CheckoutView(editedAddress: $editedAddress, locationVM: $locationVM)) {
+                    NavigationLink(destination: CheckoutView()) {
                         Text("Pay now")
                             .frame(maxWidth: .infinity)
                             .padding()
