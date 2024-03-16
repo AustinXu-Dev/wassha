@@ -52,6 +52,15 @@ import SwiftUI
 import SwiftUI
 
 struct CheckoutView: View {
+    
+    
+    @Binding var editedAddress : String
+    @Binding var locationVM : LocationManagerViewModel
+    
+    
+    
+    
+    
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 10) {
@@ -80,10 +89,21 @@ struct CheckoutView: View {
 
                             VStack {
                                 Image("shirt 1")
-                                Text("Dcondo")
-                                    .font(.caption)
-                                    .bold()
-                                    .foregroundColor(.blue)
+//                                Text(self.locationVM.userAddress ?? self.editedAddress)
+                               
+                                    if self.editedAddress != "" {
+                                        Text(self.editedAddress)
+                                            .font(.caption)
+                                            .bold()
+                                            .foregroundColor(.blue)
+                                    } else {
+                                        Text(locationVM.userAddress ?? "Location Not Found")
+                                            .font(.caption)
+                                            .bold()
+                                            .foregroundColor(.blue)
+                                    }
+                                
+                                   
                             }
                             .padding()
                         }
@@ -186,9 +206,9 @@ struct PaymentOptionButton: View {
         }
     }
 }
-
-#Preview {
-    NavigationStack{
-        CheckoutView()
-    }
-}
+//
+//#Preview {
+//    NavigationStack{
+//        CheckoutView()
+//    }
+//}

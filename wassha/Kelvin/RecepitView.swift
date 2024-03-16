@@ -143,7 +143,7 @@ struct RecepitView: View {
                             Text("Total")
                                 .foregroundColor(.white)
                             Spacer()
-                            Text("40 B")
+                            Text("150 B")
                                 .foregroundColor(.white)
                         }
                         .padding(5)
@@ -324,7 +324,7 @@ struct RecepitView: View {
                         Text("You can add your note here!")
                     }
                     
-                    NavigationLink(destination: CheckoutView()) {
+                    NavigationLink(destination: CheckoutView(editedAddress: $editedAddress, locationVM: $locationVM)) {
                         Text("Pay now")
                             .frame(maxWidth: .infinity)
                             .padding()
